@@ -104,42 +104,46 @@ const AchievementSection: React.FC = () => {
           </div>
         </Col>
         <Col xs={24} md={12}>
-          <div className="text-5xl font-bold text-center mb-12 uppercase">
+          <div className="md:text-5xl text-3xl font-bold text-center mb-12 uppercase">
             Thành tựu nổi bật
           </div>
 
           <div className="flex items-center justify-center gap-10 mb-10">
             {achievementsTopRight.map((item, index) => (
               <div key={index} className="text-center">
-                <div className="text-orange-600 text-6xl font-bold">
+                <div className="text-orange-600 md:text-6xl text-5xl font-bold">
                   <Counter end={item.count} duration={2000} />+
                 </div>
-                <div className="text-2xl font-semibold">{item.label}</div>
+                <div className="md:text-2xl text-xl font-semibold">
+                  {item.label}
+                </div>
               </div>
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-20">
+          <div className="grid grid-cols-2 gap-4 md:mb-20 mb-4">
             {achievementsTop.map((item, index) => (
               <div key={index} className="text-center">
-                <div className="text-orange-600 text-5xl font-bold">
+                <div className="text-orange-600 md:text-5xl text-4xl font-bold">
                   <Counter end={item.count} duration={2000} />+
                 </div>
-                <div className="text-2xl font-semibold">{item.label}</div>
+                <div className="md:text-2xl text-xl font-semibold">
+                  {item.label}
+                </div>
               </div>
             ))}
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-16">
+          <div className="grid grid-cols-1 md:grid-cols-2 md:gap-16 gap-4">
             {achievementsBottom.map((item, index) => (
               <div key={index}>
-                <div className="text-5xl font-bold">
+                <div className="md:text-5xl text-3xl font-bold">
                   <Counter end={item.count} duration={2500} />+
                 </div>
-                <div className="text-xl font-semibold">
+                <div className="md:text-xl text-lg font-semibold">
                   {item.label}{" "}
                   {item.suffix && (
-                    <span className="italic text-xl text-orange-500">
+                    <span className="italic md:text-xl text-lg text-orange-500">
                       {item.suffix}
                     </span>
                   )}

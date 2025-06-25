@@ -3,9 +3,9 @@ import GDGIC from "../../assets/devplus2.png";
 
 const Discussion = () => {
   return (
-    <div className="bg-orange-700/90 p-20">
-      <div className="flex flex-col gap-2 max-w-[1200px] mx-auto">
-        <div className="text-5xl font-bold text-center mb-12 uppercase text-white">
+    <div className="bg-orange-700/90 md:p-20 p-4">
+      <div className="flex flex-col md:gap-2 gap-4 max-w-[1200px] mx-auto">
+        <div className="md:text-5xl text-3xl font-bold text-center mb-12 uppercase text-white">
           PANEL DISCUSSION
         </div>
         <div className="flex items-center w-full bg-indigo-600 rounded-lg">
@@ -17,14 +17,13 @@ const Discussion = () => {
         </div>
         <Card>
           <div className="flex flex-col gap-4">
-            <div className="text-2xl font-bold text-center">
+            <div className="md:text-2xl text-lg font-bold text-center">
               Tham gia bài kiểm tra đánh giá năng lực sử dụng AI
             </div>
-            <div className="flex flex-row gap-4 justify-center">
+            <div className="flex md:flex-row flex-col gap-4 justify-center">
               <div className="flex flex-row gap-1">
                 <Image
-                  width={60}
-                  height={60}
+                  className="md:!w-[60px] !w-[50px]"
                   src={GDGIC}
                   alt="Dev1"
                   preview={false}
@@ -36,8 +35,7 @@ const Discussion = () => {
               </div>
               <div className="flex flex-row gap-1">
                 <Image
-                  width={60}
-                  height={60}
+                  className="md:!w-[60px] !w-[50px]"
                   src={GDGIC}
                   alt="Dev1"
                   preview={false}
@@ -59,14 +57,13 @@ const Discussion = () => {
         </div>
         <Card>
           <div className="flex flex-col gap-4">
-            <div className="text-2xl font-bold text-center">
+            <div className="md:text-2xl text-lg font-bold text-center">
               AI: Bước Nhảy Vọt Cho Phát Triển Phần Mềm
             </div>
-            <div className="flex flex-row gap-4 justify-center">
+            <div className="flex flex-row gap-4 md:justify-center justify-start">
               <div className="flex flex-row gap-1">
                 <Image
-                  width={60}
-                  height={60}
+                  className="md:!w-[60px] !w-[50px]"
                   src={GDGIC}
                   alt="Dev1"
                   preview={false}
@@ -86,17 +83,16 @@ const Discussion = () => {
           </span>
           <div className="flex-grow h-1 bg-gradient-to-r from-orange-400 via-yellow-400 to-red-500"></div>
         </div>
-        <div className="grid grid-cols-2 gap-6">
+        <div className="grid md:grid-cols-2 grid-cols-1 gap-6">
           <Card>
             <div className="flex flex-col gap-4">
-              <div className="text-2xl font-bold">
+              <div className="md:text-2xl text-lg font-bold">
                 Bộ Ba Quyền Lực: Công Cụ, Kỹ Năng & Tư Duy Cho Dev thời AI
               </div>
               <div className="flex flex-row gap-4">
                 <div className="flex flex-row gap-1">
                   <Image
-                    width={60}
-                    height={60}
+                    className="md:!w-[60px] !w-[50px]"
                     src={GDGIC}
                     alt="Dev1"
                     preview={false}
@@ -111,14 +107,13 @@ const Discussion = () => {
           </Card>
           <Card>
             <div className="flex flex-col gap-4">
-              <div className="text-2xl font-bold">
+              <div className="md:text-2xl text-lg font-bold">
                 Bộ Ba Quyền Lực: Công Cụ, Kỹ Năng & Tư Duy Cho Dev thời AI
               </div>
               <div className="flex flex-row gap-4">
                 <div className="flex flex-row gap-1">
                   <Image
-                    width={60}
-                    height={60}
+                    className="md:!w-[60px] !w-[50px]"
                     src={GDGIC}
                     alt="Dev1"
                     preview={false}

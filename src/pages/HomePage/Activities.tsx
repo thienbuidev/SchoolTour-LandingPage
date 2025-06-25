@@ -42,14 +42,14 @@ const activities = [
 
 const Activities = () => {
   return (
-    <div className="bg-orange-100/50 p-20">
-      <div className="text-5xl font-bold text-center mb-12 uppercase text-orange-700">
+    <div className="bg-orange-100/50 md:p-20 py-6">
+      <div className="md:text-5xl text-2xl font-bold text-center md:mb-12 mb-6 uppercase text-orange-700">
         AUDIENCES AND ACTIVITIES
       </div>
       <div className="flex flex-col max-w-[1200px] mx-auto">
         {activities.map((activity, idx) => (
           <div
-            className={`grid grid-cols-2 ${
+            className={`grid md:grid-cols-2 grid-cols-1 ${
               idx % 2 === 1 ? "flex-row-reverse" : ""
             }`}
             key={activity.title}
@@ -60,12 +60,13 @@ const Activities = () => {
                   src={activity.image}
                   alt={activity.title}
                   preview={false}
-                  height={700}
-                  className="object-cover"
+                  className="object-cover md:!h-[600px] !h-[400px]"
                 />
-                <div className="flex flex-col gap-4 p-10">
-                  <div className="text-2xl font-bold">{activity.title}</div>
-                  <div className="text-lg flex flex-col gap-2 text-justify">
+                <div className="flex flex-col gap-4 md:p-10 p-6">
+                  <div className="md:text-2xl text-lg font-bold">
+                    {activity.title}
+                  </div>
+                  <div className="md:text-lg text-sm flex flex-col gap-2 text-justify">
                     {Array.isArray(activity.description)
                       ? activity.description.map((desc) => (
                           <div key={desc}>{desc}</div>
@@ -76,16 +77,19 @@ const Activities = () => {
               </>
             ) : (
               <>
-                <div className="flex flex-col gap-4 p-10">
-                  <div className="text-2xl font-bold">{activity.title}</div>
-                  <div className="text-lg">{activity.description}</div>
+                <div className="flex flex-col gap-4 md:p-10 p-6">
+                  <div className="md:text-2xl text-lg font-bold">
+                    {activity.title}
+                  </div>
+                  <div className="md:text-lg text-sm text-justify">
+                    {activity.description}
+                  </div>
                 </div>
                 <Image
                   src={activity.image}
                   alt={activity.title}
                   preview={false}
-                  height={700}
-                  className="object-cover"
+                  className="object-cover md:h-[700px] !h-[400px]"
                 />
               </>
             )}

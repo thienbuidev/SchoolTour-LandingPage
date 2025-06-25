@@ -1,6 +1,12 @@
 .ready-for-text {
-  -webkit-text-stroke: 4px #f97316;
+  -webkit-text-stroke: 2px #d65900;
   color: white;
   font-family: "Arial", sans-serif;
   text-align: center;
+}
+
+@media (min-width: 768px) {
+  .ready-for-text {
+    -webkit-text-stroke: 4px #f97316;
+  }
 }

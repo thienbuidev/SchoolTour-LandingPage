@@ -43,12 +43,12 @@ const speakers = [
 
 const Speaker = () => {
   return (
-    <div className="bg-orange-700 p-20">
+    <div className="bg-orange-700 md:p-20 p-4 pb-8">
       <div className="flex flex-col gap-2 max-w-[1000px] mx-auto">
-        <div className="text-5xl font-bold text-center mb-12 uppercase text-white">
+        <div className="md:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-white">
           OUR SPEAKERS
         </div>
-        <div className="grid grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-3">
           {speakers.map((speaker) => (
             <div
               key={speaker.name}
@@ -58,13 +58,12 @@ const Speaker = () => {
                 src={speaker.image}
                 alt={speaker.name}
                 preview={false}
-                className="!rounded-lg w-full h-full object-cover"
-                height={240}
+                className="!rounded-lg w-full object-cover md:!h-[240px] !h-[180px]"
               />
-              <div className="flex flex-col gap-1 p-4 bg-orange-800 rounded-b-lg text-white">
+              <div className="flex flex-col gap-1 md:p-4 p-2 bg-orange-800 rounded-b-lg text-white">
                 <div>
                   <div className="font-semibold text-xl">{speaker.name}</div>
-                  <div className="t">{speaker.position}</div>
+                  <div className="">{speaker.position}</div>
                 </div>
                 <div className="text-md text-blue-200">
                   {speaker.description}

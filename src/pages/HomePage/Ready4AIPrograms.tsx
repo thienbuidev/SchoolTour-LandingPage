@@ -1,11 +1,11 @@
 import { Image } from "antd";
-import { FaChalkboardTeacher, FaRobot, FaUsers } from "react-icons/fa";
+// import { FaChalkboardTeacher, FaRobot, FaUsers } from "react-icons/fa";
 import PymaridIC from "../../assets/pymarid.png";
 
 const Ready4AIPrograms = () => {
   return (
-    <div className="flex flex-col gap-30 !bg-orange-100/90 !py-20">
-      <div className="">
+    <div className="flex flex-col gap-30 !bg-orange-100/90 md:!py-20 py-6">
+      {/* <div className="">
         <div className="text-6xl font-bold text-center mb-26 uppercase text-orange-700">
           Lộ trình học tập
         </div>
@@ -55,10 +55,15 @@ const Ready4AIPrograms = () => {
             </p>
           </div>
         </div>
-      </div>
-      <div className="flex flex-row items-center justify-center gap-30">
-        <Image src={PymaridIC} alt="Ready4AI" preview={false} />
-        <div className="relative text-xl md:text-7xl mt-6 md:mt-4 py-2 pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-yellow-400 before:to-red-500">
+      </div> */}
+      <div className="flex md:flex-row flex-col items-center justify-center md:gap-30 gap-4">
+        <Image
+          src={PymaridIC}
+          alt="Ready4AI"
+          preview={false}
+          className="p-4 md:p-0"
+        />
+        <div className="flex flex-row md:flex-col relative text-4xl md:text-7xl mt-0 md:mt-4 py-2 pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-yellow-400 before:to-red-500">
           <h1 className="font-semibold">DevPlus</h1>
           <h1 className="text-orange-500 font-semibold">Philosophy</h1>
         </div>

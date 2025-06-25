@@ -20,12 +20,12 @@ const SchoolTour = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-2 gap-10 max-w-[1400px] mx-auto p-20">
+    <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-4 max-w-[1400px] mx-auto md:p-20 p-6">
       <div className="flex flex-col justify-center items-center">
-        <div className="text-6xl font-bold text-center mb-12 uppercase bg-gradient-to-r from-orange-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
+        <div className="md:text-6xl text-4xl font-bold text-center md:mb-12 mb-6 uppercase bg-gradient-to-r from-orange-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
           SCHOOL TOUR 2025
         </div>
-        <p className="text-xl text-justify font-medium">
+        <p className="md:text-xl text-sm text-justify font-medium">
           Truyền cảm hứng và trang bị cho sinh viên tầm nhìn chiến lược về kỷ
           nguyên AI, từ đó giúp sinh viên xác định các bước hành động cụ thể để
           phát triển kỹ năng và nuôi dưỡng tư duy đúng đắn để kiến tạo con đường
@@ -41,7 +41,12 @@ const SchoolTour = () => {
             zoomed ? "scale-100" : "scale-90 opacity-0"
           }`}
         >
-          <Image src={Devplus2} alt="Devplus2" preview={false} />
+          <Image
+            src={Devplus2}
+            alt="Devplus2"
+            preview={false}
+            className="md:!w-[400px] !w-[300px]"
+          />
         </div>
       </div>
     </div>

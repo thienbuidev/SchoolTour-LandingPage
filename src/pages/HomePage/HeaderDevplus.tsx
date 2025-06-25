@@ -15,7 +15,7 @@ const navs = [
 
 const HeaderDevplus = ({ activeSection }: { activeSection: string }) => {
   return (
-    <Header className="sticky top-0 left-0 right-0 z-99999 !flex !flex-row justify-center items-center gap-4 text-lg !text-orange-800 font-medium !bg-orange-100/50 !backdrop-blur-2xl">
+    <Header className="hidden sticky top-0 left-0 right-0 z-99999 md:!flex md:!flex-row justify-center items-center gap-4 text-lg !text-orange-800 font-medium !bg-orange-100/50 !backdrop-blur-2xl">
       {navs.map((nav) => (
         <div
           key={nav.id}
