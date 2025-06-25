@@ -16,7 +16,7 @@ import HPCLogo from "../../assets/hpc.webp";
 import AMAXLogo from "../../assets/amax.png";
 import NVIDIAGLogo from "../../assets/nvidia.png";
 import EnouvoLogo from "../../assets/enouvo.png";
-import RikeiLogo from "../../assets/rikei.png";
+import RikeiLogo from "../../assets/Rikei.png";
 import RikaiLogo from "../../assets/rikai.png";
 import CMCLogo from "../../assets/cmc.webp";
 import EnableStartupLogo from "../../assets/enablestatup.webp";
