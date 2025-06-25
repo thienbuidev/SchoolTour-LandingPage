@@ -11,6 +11,7 @@ import HeaderDevplus from "./HeaderDevplus";
 import "./homepage.css";
 import Speaker from "./Speaker";
 import { useEffect, useRef, useState } from "react";
+import FooterDevplus from "./FooterDevplus";
 
 const sectionIds = [
   "introduction",
@@ -139,7 +140,7 @@ const HomePage = () => {
           <Speaker />
         </div>
       </div>
-      {/* <FooterDevplus /> */}
+      <FooterDevplus />
     </Layout>
   );
 };

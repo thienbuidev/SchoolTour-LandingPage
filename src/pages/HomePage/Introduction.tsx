@@ -49,7 +49,7 @@ const Introduction = () => {
           </div>
         </div>
         <div className="flex flex-row">
-          <div className="text-2xl font-semibold">
+          <div className="text-2xl font-semibold text-orange-600">
             Tháng 6-9/2025, Thành phố Đà Nẵng
           </div>
         </div>
