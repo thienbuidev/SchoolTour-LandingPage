@@ -137,47 +137,97 @@ const partners = [
 
 const Network = () => {
   return (
-    <div className="p-20">
-      <div className="flex flex-col gap-10 max-w-[1200px] mx-auto">
-        <div className="text-5xl font-bold text-center uppercase text-orange-700">
-          NETWORKING
-        </div>
-        <div className="text-center text-xl font-medium">
-          DevPlus kết nối với nhiều đối tác doanh nghiệp uy tín để đảm bảo cơ
-          hội thực tập và đầu ra việc làm cho sinh viên.
-        </div>
-        {/* <Image src={NetworkImage} alt="Network" preview={false} /> */}
-        <div className="flex flex-col gap-4">
-          <div className="text-2xl font-bold text-center uppercase text-orange-700">
-            Đơn vị tổ chức
+    <div className="relative overflow-hidden">
+      <div className="absolute inset-0 bg-gradient-to-br from-orange-100 via-orange-50 to-white transition-all duration-1000"></div>
+      <div className="absolute inset-0 overflow-hidden pointer-events-none">
+        <div className="absolute -top-32 -left-32 w-96 h-96 bg-gradient-to-br from-orange-300/40 to-orange-500/30 rounded-full blur-3xl backdrop-blur-3xl animate-pulse transition-all duration-3000"></div>
+        <div className="absolute top-1/4 -right-24 w-80 h-80 bg-gradient-to-bl from-orange-400/35 to-orange-600/25 rounded-full blur-3xl backdrop-blur-3xl animate-pulse delay-1000 transition-all duration-3000"></div>
+        <div className="absolute bottom-32 left-1/4 w-72 h-72 bg-gradient-to-tr from-orange-200/45 to-orange-300/35 rounded-full blur-2xl backdrop-blur-3xl animate-pulse delay-2000 transition-all duration-3000"></div>
+
+        <div className="absolute top-1/2 left-1/2 w-64 h-64 bg-gradient-to-r from-white/30 to-orange-100/40 rounded-full blur-2xl backdrop-blur-2xl transform -translate-x-1/2 -translate-y-1/2 animate-pulse delay-500 transition-all duration-3000"></div>
+        <div className="absolute top-3/4 right-1/3 w-48 h-48 bg-gradient-to-l from-orange-200/40 to-white/35 rounded-full blur-xl backdrop-blur-2xl animate-pulse delay-1500 transition-all duration-3000"></div>
+
+        <div className="absolute top-20 left-3/4 w-32 h-32 bg-white/25 rounded-full blur-lg backdrop-blur-sm animate-pulse transition-all duration-2000"></div>
+        <div className="absolute bottom-1/4 left-1/6 w-24 h-24 bg-orange-100/30 rounded-full blur-lg backdrop-blur-sm animate-pulse delay-1000 transition-all duration-2000"></div>
+      </div>
+      <div className="p-20 relative">
+        <div className="flex flex-col gap-10 max-w-[1200px] mx-auto">
+          <div className="text-5xl font-bold text-center uppercase text-orange-700 animate-fade-in-up transition-all duration-1000 hover:scale-105 hover:text-orange-800">
+            NETWORKING
           </div>
-          <div className="flex flex-row items-center justify-center gap-4">
-            {organizations.map((org) => (
-              <CompanyCard key={org.name} org={org} />
-            ))}
+          <div className="text-center text-xl font-medium animate-fade-in-up delay-200 transition-all duration-1000 hover:text-orange-700">
+            DevPlus kết nối với nhiều đối tác doanh nghiệp uy tín để đảm bảo cơ
+            hội thực tập và đầu ra việc làm cho sinh viên.
           </div>
-        </div>
-        <div className="flex flex-col gap-4">
-          <div className="text-2xl font-bold text-center uppercase text-orange-700">
-            Đơn vị đồng hành
+          {/* <Image src={NetworkImage} alt="Network" preview={false} /> */}
+          <div className="flex flex-col gap-4 animate-fade-in-up delay-400 transition-all duration-1000">
+            <div className="text-2xl font-bold text-center uppercase text-orange-700 transition-all duration-300 hover:scale-105 hover:text-orange-800">
+              Đơn vị tổ chức
+            </div>
+            <div className="flex flex-row items-center justify-center gap-4">
+              {organizations.map((org, index) => (
+                <div
+                  key={org.name}
+                  className="animate-fade-in-up transition-all duration-500"
+                  style={{ animationDelay: `${600 + index * 200}ms` }}
+                >
+                  <CompanyCard org={org} />
+                </div>
+              ))}
+            </div>
           </div>
-          <div className="flex flex-row items-center justify-center gap-4">
-            {companion.map((org) => (
-              <CompanyCard key={org.name} org={org} />
-            ))}
+          <div className="flex flex-col gap-4 animate-fade-in-up delay-600 transition-all duration-1000">
+            <div className="text-2xl font-bold text-center uppercase text-orange-700 transition-all duration-300 hover:scale-105 hover:text-orange-800">
+              Đơn vị đồng hành
+            </div>
+            <div className="flex flex-row items-center justify-center gap-4">
+              {companion.map((org, index) => (
+                <div
+                  key={org.name}
+                  className="animate-fade-in-up transition-all duration-500"
+                  style={{ animationDelay: `${800 + index * 200}ms` }}
+                >
+                  <CompanyCard org={org} />
+                </div>
+              ))}
+            </div>
           </div>
-        </div>
-        <div className="flex flex-col gap-4">
-          <div className="text-2xl font-bold text-center uppercase text-orange-700">
-            Partners
-          </div>
-          <div className="grid grid-cols-4 gap-4">
-            {partners.map((org) => (
-              <CompanyCard key={org.name} org={org} />
-            ))}
+          <div className="flex flex-col gap-4 animate-fade-in-up delay-800 transition-all duration-1000">
+            <div className="text-2xl font-bold text-center uppercase text-orange-700 transition-all duration-300 hover:scale-105 hover:text-orange-800">
+              Partners
+            </div>
+            <div className="grid grid-cols-4 gap-4">
+              {partners.map((org, index) => (
+                <div
+                  key={org.name}
+                  className="animate-fade-in-up transition-all duration-500"
+                  style={{ animationDelay: `${1000 + index * 100}ms` }}
+                >
+                  <CompanyCard org={org} />
+                </div>
+              ))}
+            </div>
           </div>
         </div>
       </div>
+
+      <style>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 0.8s ease-out forwards;
+          opacity: 0;
+        }
+      `}</style>
     </div>
   );
 };

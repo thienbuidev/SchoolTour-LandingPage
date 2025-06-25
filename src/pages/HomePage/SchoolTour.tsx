@@ -1,5 +1,5 @@
 import { Image } from "antd";
-import Devplus2 from "../../assets/devplus2.png";
+import Devplus2 from "../../assets/devplus4D.png";
 import { useEffect, useRef, useState } from "react";
 
 const SchoolTour = () => {
