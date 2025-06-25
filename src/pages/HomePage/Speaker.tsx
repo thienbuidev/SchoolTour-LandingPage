@@ -43,7 +43,7 @@ const speakers = [
 
 const Speaker = () => {
   return (
-    <div className="bg-orange-700 md:p-20 p-4 pb-8">
+    <div className="bg-orange-700 md:p-8 lg:p-16 p-4 pb-8">
       <div className="flex flex-col gap-2 max-w-[1000px] mx-auto">
         <div className="md:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-white">
           OUR SPEAKERS
@@ -58,7 +58,7 @@ const Speaker = () => {
                 src={speaker.image}
                 alt={speaker.name}
                 preview={false}
-                className="!rounded-lg w-full object-cover md:!h-[240px] !h-[180px]"
+                className="!rounded-lg w-full object-cover md:!h-[240px] sm:!h-[220px] !h-[180px]"
               />
               <div className="flex flex-col gap-1 md:p-4 p-2 bg-orange-800 rounded-b-lg text-white">
                 <div>

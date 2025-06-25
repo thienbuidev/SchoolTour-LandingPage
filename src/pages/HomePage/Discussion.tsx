@@ -5,7 +5,7 @@ const Discussion = () => {
   return (
     <div className="bg-orange-700/90 md:p-20 p-4">
       <div className="flex flex-col md:gap-2 gap-4 max-w-[1200px] mx-auto">
-        <div className="md:text-5xl text-3xl font-bold text-center mb-12 uppercase text-white">
+        <div className="md:text-4xl lg:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-white">
           PANEL DISCUSSION
         </div>
         <div className="flex items-center w-full bg-indigo-600 rounded-lg">
@@ -17,7 +17,7 @@ const Discussion = () => {
         </div>
         <Card>
           <div className="flex flex-col gap-4">
-            <div className="md:text-2xl text-lg font-bold text-center">
+            <div className="md:text-2xl text-xl font-bold text-center">
               Tham gia bài kiểm tra đánh giá năng lực sử dụng AI
             </div>
             <div className="flex md:flex-row flex-col gap-4 justify-center">
@@ -57,7 +57,7 @@ const Discussion = () => {
         </div>
         <Card>
           <div className="flex flex-col gap-4">
-            <div className="md:text-2xl text-lg font-bold text-center">
+            <div className="md:text-2xl text-xl font-bold text-center">
               AI: Bước Nhảy Vọt Cho Phát Triển Phần Mềm
             </div>
             <div className="flex flex-row gap-4 md:justify-center justify-start">

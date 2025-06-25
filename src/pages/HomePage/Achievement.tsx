@@ -104,7 +104,7 @@ const AchievementSection: React.FC = () => {
           </div>
         </Col>
         <Col xs={24} md={12}>
-          <div className="md:text-5xl text-3xl font-bold text-center mb-12 uppercase">
+          <div className="md:text-4xl lg:text-5xl text-3xl font-bold text-center mb-12 uppercase">
             Thành tựu nổi bật
           </div>
 

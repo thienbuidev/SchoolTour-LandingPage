@@ -151,7 +151,7 @@ const Network = () => {
         <div className="absolute bottom-1/4 left-1/6 w-24 h-24 bg-orange-100/30 rounded-full blur-lg backdrop-blur-sm animate-pulse delay-1000 transition-all duration-2000"></div>
       </div>
       <div className="md:p-20 p-4 relative">
-        <div className="flex flex-col md:gap-10 gap-4 max-w-[1200px] mx-auto">
+        <div className="flex flex-col sm:gap-8 md:gap-10 gap-4 max-w-[1200px] mx-auto">
           <div className="md:text-5xl text-3xl font-bold text-center uppercase text-orange-700 animate-fade-in-up transition-all duration-1000 hover:scale-105 hover:text-orange-800">
             NETWORKING
           </div>
@@ -194,9 +194,9 @@ const Network = () => {
           </div>
           <div className="flex flex-col gap-4 animate-fade-in-up delay-800 transition-all duration-1000">
             <div className="text-2xl font-bold text-center uppercase text-orange-700 transition-all duration-300 hover:scale-105 hover:text-orange-800">
-              Partners
+              Mạng lưới đối tác
             </div>
-            <div className="grid md:grid-cols-4 grid-cols-2 md:gap-4 gap-2">
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 md:gap-4 gap-2">
               {partners.map((org, index) => (
                 <div
                   key={org.name}

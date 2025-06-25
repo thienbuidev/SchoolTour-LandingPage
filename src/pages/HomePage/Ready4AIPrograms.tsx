@@ -56,14 +56,14 @@ const Ready4AIPrograms = () => {
           </div>
         </div>
       </div> */}
-      <div className="flex md:flex-row flex-col items-center justify-center md:gap-30 gap-4">
+      <div className="flex md:flex-row flex-col-reverse items-center justify-center md:gap-30 gap-4 ">
         <Image
           src={PymaridIC}
           alt="Ready4AI"
           preview={false}
           className="p-4 md:p-0"
         />
-        <div className="flex flex-row md:flex-col relative text-4xl md:text-7xl mt-0 md:mt-4 py-2 pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-yellow-400 before:to-red-500">
+        <div className="flex gap-2 flex-row md:flex-col relative text-3xl md:text-5xl lg:text-6xl md:px-6 mt-0 md:mt-4 py-2 pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-yellow-400 before:to-red-500">
           <h1 className="font-semibold">DevPlus</h1>
           <h1 className="text-orange-500 font-semibold">Philosophy</h1>
         </div>
