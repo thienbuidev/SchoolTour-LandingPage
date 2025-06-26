@@ -4,27 +4,26 @@ import GDGLogo from "../../assets/gdg.png";
 import AILeaderLogo from "../../assets/aileadervn.png";
 import CompanyCard from "./CompanyCard";
 
-import RSNLogo from "../../assets/rsn.png";
-import SalesforceLogo from "../../assets/salesforce.png";
-import MXLogo from "../../assets/mx.png";
-import SamsungLogo from "../../assets/samsung.png";
-import AHEALogo from "../../assets/ahead.png";
-import AdvizexLogo from "../../assets/advizex.png";
-import TwoCRSILogo from "../../assets/2crsi.png";
-import CDWLogo from "../../assets/cdw.webp";
-import HPCLogo from "../../assets/hpc.webp";
-import AMAXLogo from "../../assets/amax.png";
-import NVIDIAGLogo from "../../assets/nvidia.png";
-import EnouvoLogo from "../../assets/enouvo.png";
-import RikeiLogo from "../../assets/Rikei.png";
-import RikaiLogo from "../../assets/rikai.png";
-import CMCLogo from "../../assets/cmc.webp";
-import EnableStartupLogo from "../../assets/enablestatup.webp";
-import STLogo from "../../assets/st.png";
-import MadisonLogo from "../../assets/madison.webp";
-import ParacelLogo from "../../assets/paracel.png";
-import NAPALogo from "../../assets/napa.jpg";
-import SYNOPSYLogo from "../../assets/sysnosys.png";
+import RSNLogo from "../../assets/company/MOZIASOFT.png";
+import SalesforceLogo from "../../assets/company/chatfly.svg";
+import MXLogo from "../../assets/company/cmc-global.png";
+import SamsungLogo from "../../assets/company/edtronaut.png";
+import AHEALogo from "../../assets/company/EM&AI.png";
+import AdvizexLogo from "../../assets/company/Enable-Startup.png";
+import TwoCRSILogo from "../../assets/company/enouvo.png";
+import CDWLogo from "../../assets/company/GDG.png";
+import HPCLogo from "../../assets/company/heatmob.png";
+import AMAXLogo from "../../assets/company/Logo-Rikkei.png";
+import NVIDIAGLogo from "../../assets/company/madison-technologies.png";
+import EnouvoLogo from "../../assets/company/Mor.png";
+import RikeiLogo from "../../assets/company/MOZIASOFT.png";
+import RikaiLogo from "../../assets/company/mrp.png";
+import CMCLogo from "../../assets/company/Napa global.png";
+import EnableStartupLogo from "../../assets/company/Paracel.png";
+import STLogo from "../../assets/company/PSCD.png";
+import ParacelLogo from "../../assets/company/RIKAI.png";
+import NAPALogo from "../../assets/company/techchain.png";
+import SYNOPSYLogo from "../../assets/company/tomosia.png";
 
 const organizations = [
   {
@@ -50,51 +49,51 @@ const companion = [
 
 const partners = [
   {
-    name: "RSN",
+    name: "MOZIASOFT",
     image: RSNLogo,
   },
   {
-    name: "Salesforce",
+    name: "AVOCA",
     image: SalesforceLogo,
   },
   {
-    name: "MX",
+    name: "chatfly",
     image: MXLogo,
   },
   {
-    name: "Samsung",
+    name: "cmc",
     image: SamsungLogo,
   },
   {
-    name: "AHEAD",
+    name: "emai",
     image: AHEALogo,
   },
   {
-    name: "Advizex",
+    name: "enablestartup",
     image: AdvizexLogo,
   },
   {
-    name: "2CRSI",
+    name: "enouvo",
     image: TwoCRSILogo,
   },
   {
-    name: "CDW",
+    name: "gdg",
     image: CDWLogo,
   },
   {
-    name: "HPC",
+    name: "heatmob",
     image: HPCLogo,
   },
   {
-    name: "AMAX",
+    name: "edtronaut",
     image: AMAXLogo,
   },
   {
-    name: "NVIDIA",
+    name: "pscd",
     image: NVIDIAGLogo,
   },
   {
-    name: "Enouvo",
+    name: "rikai",
     image: EnouvoLogo,
   },
   {
@@ -102,35 +101,31 @@ const partners = [
     image: RikeiLogo,
   },
   {
-    name: "Rikai",
+    name: "madison",
     image: RikaiLogo,
   },
   {
-    name: "CMC",
+    name: "mor",
     image: CMCLogo,
   },
   {
-    name: "EnableStartup",
+    name: "mrp",
     image: EnableStartupLogo,
   },
   {
-    name: "ST",
+    name: "napa",
     image: STLogo,
-  },
-  {
-    name: "Madison",
-    image: MadisonLogo,
   },
   {
     name: "Paracel",
     image: ParacelLogo,
   },
   {
-    name: "NAPA",
+    name: "techchain",
     image: NAPALogo,
   },
   {
-    name: "SYNOPSYS",
+    name: "tomosia",
     image: SYNOPSYLogo,
   },
 ];
@@ -153,7 +148,7 @@ const Network = () => {
       <div className="md:p-20 p-4 relative">
         <div className="flex flex-col sm:gap-8 md:gap-10 gap-4 max-w-[1200px] mx-auto">
           <div className="md:text-5xl text-3xl font-bold text-center uppercase text-orange-700 animate-fade-in-up transition-all duration-1000 hover:scale-105 hover:text-orange-800">
-            NETWORKING
+            Kết nối
           </div>
           <div className="text-center md:text-xl text-lg font-medium animate-fade-in-up delay-200 transition-all duration-1000 hover:text-orange-700">
             DevPlus kết nối với nhiều đối tác doanh nghiệp uy tín để đảm bảo cơ

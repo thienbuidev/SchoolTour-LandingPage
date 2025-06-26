@@ -6,7 +6,7 @@ const Discussion = () => {
     <div className="bg-orange-700/90 md:p-20 p-4">
       <div className="flex flex-col md:gap-2 gap-4 max-w-[1200px] mx-auto">
         <div className="md:text-4xl lg:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-white">
-          PANEL DISCUSSION
+          Tọa đàm
         </div>
         <div className="flex items-center w-full bg-indigo-600 rounded-lg">
           <div className="flex-grow h-1 bg-gradient-to-r from-orange-400 via-yellow-400 to-red-500"></div>

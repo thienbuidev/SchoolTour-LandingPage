@@ -46,7 +46,7 @@ const Speaker = () => {
     <div className="bg-orange-700 md:p-8 lg:p-16 p-4 pb-8">
       <div className="flex flex-col gap-2 max-w-[1000px] mx-auto">
         <div className="md:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-white">
-          OUR SPEAKERS
+          Diễn giả
         </div>
         <div className="grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-3">
           {speakers.map((speaker) => (

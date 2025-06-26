@@ -3,14 +3,14 @@ import { Layout } from "antd";
 const { Header } = Layout;
 
 const navs = [
-  { id: "introduction", label: "Introduction" },
+  { id: "introduction", label: "Giới thiệu" },
   { id: "schooltour", label: "School Tour 2025" },
-  { id: "activities", label: "Activities" },
-  { id: "learning", label: "Learning" },
-  { id: "achievement", label: "Achievement" },
-  { id: "discussion", label: "Panel Discussion" },
-  { id: "network", label: "Networking" },
-  { id: "speakers", label: "Our Speakers" },
+  { id: "activities", label: "Hoạt động" },
+  { id: "learning", label: "Học tập" },
+  { id: "achievement", label: "Thành tựu" },
+  { id: "discussion", label: "Tọa đàm" },
+  { id: "network", label: "Kết nối" },
+  { id: "speakers", label: "Diễn giả" },
 ];
 
 const HeaderDevplus = ({ activeSection }: { activeSection: string }) => {
