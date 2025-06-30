@@ -4,6 +4,7 @@ const { Header } = Layout;
 
 const navs = [
   { id: "introduction", label: "Giới thiệu" },
+  { id: "ready4ai", label: "#Ready4AI" },
   { id: "schooltour", label: "School Tour 2025" },
   { id: "activities", label: "Hoạt động" },
   { id: "learning", label: "Học tập" },

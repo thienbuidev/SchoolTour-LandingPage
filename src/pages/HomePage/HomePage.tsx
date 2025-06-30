@@ -12,9 +12,11 @@ import "./homepage.css";
 import Speaker from "./Speaker";
 import { useEffect, useRef, useState } from "react";
 import FooterDevplus from "./FooterDevplus";
+import Ready4AI from "./Ready4AI";
 
 const sectionIds = [
   "introduction",
+  "ready4ai",
   "schooltour",
   "activities",
   "learning",
@@ -75,6 +77,15 @@ const HomePage = () => {
           className="scroll-mt-24"
         >
           <Introduction />
+        </div>
+        <div
+          id="ready4ai"
+          ref={(el) => {
+            sectionRefs.current[1] = el;
+          }}
+          className="scroll-mt-16"
+        >
+          <Ready4AI />
         </div>
         <div
           id="schooltour"
