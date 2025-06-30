@@ -1,9 +1,9 @@
 import { Image } from "antd";
 
-import Dev7 from "../../assets/hinh7.jpg";
-import Dev8 from "../../assets/hinh8.jpg";
-import Dev9 from "../../assets/hinh9.jpg";
-import Dev10 from "../../assets/hinh10.jpg";
+import Dev7 from "../../assets/intro/1.png";
+import Dev8 from "../../assets/intro/2.png";
+import Dev9 from "../../assets/intro/3.png";
+import Dev10 from "../../assets/intro/4.png";
 
 const activities = [
   {
