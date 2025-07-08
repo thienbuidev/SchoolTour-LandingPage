@@ -148,7 +148,7 @@ const Network = () => {
       <div className="md:p-20 p-4 relative">
         <div className="flex flex-col sm:gap-8 md:gap-10 gap-4 max-w-[1200px] mx-auto">
           <div className="md:text-5xl text-3xl font-bold text-center uppercase text-[#ff6900] animate-fade-in-up transition-all duration-1000 hover:scale-105 hover:text-orange-800">
-            Kết nối
+            Đối tác
           </div>
           <div className="text-center md:text-xl text-lg font-medium animate-fade-in-up delay-200 transition-all duration-1000 hover:text-orange-700">
             DevPlus kết nối với nhiều đối tác doanh nghiệp uy tín để đảm bảo cơ
