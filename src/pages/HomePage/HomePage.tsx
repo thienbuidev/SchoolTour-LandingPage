@@ -1,29 +1,31 @@
-import { Layout } from "antd";
-import Introduction from "./Introduction";
-import Ready4AIPrograms from "./Ready4AIPrograms";
-import AchievementSection from "./Achievement";
-import SchoolTour from "./SchoolTour";
-import Activities from "./Activities";
-import Discussion from "./Discussion";
-import Network from "./Network";
-import HeaderDevplus from "./HeaderDevplus";
+import { Layout } from 'antd';
+import Introduction from './Introduction';
+import Ready4AIPrograms from './Ready4AIPrograms';
+import AchievementSection from './Achievement';
+import SchoolTour from './SchoolTour';
+import Activities from './Activities';
+// import Discussion from './Discussion';
+import Network from './Network';
+import HeaderDevplus from './HeaderDevplus';
 // import FooterDevplus from "./FooterDevplus";
-import "./homepage.css";
-import Speaker from "./Speaker";
-import { useEffect, useRef, useState } from "react";
-import FooterDevplus from "./FooterDevplus";
-import Ready4AI from "./Ready4AI";
+import './homepage.css';
+import Speaker from './Speaker';
+import { useEffect, useRef, useState } from 'react';
+import FooterDevplus from './FooterDevplus';
+// import Ready4AI from "./Ready4AI";
+import Target from './Target';
 
 const sectionIds = [
-  "introduction",
-  "ready4ai",
-  "schooltour",
-  "activities",
-  "learning",
-  "achievement",
-  "discussion",
-  "network",
-  "speakers",
+  'introduction',
+  'target',
+  // 'ready4ai',
+  'schooltour',
+  // 'activities',
+  'learning',
+  'achievement',
+  'discussion',
+  'network',
+  'speakers',
 ];
 
 const HomePage = () => {
@@ -78,7 +80,7 @@ const HomePage = () => {
         >
           <Introduction />
         </div>
-        <div
+        {/* <div
           id="ready4ai"
           ref={(el) => {
             sectionRefs.current[1] = el;
@@ -86,6 +88,15 @@ const HomePage = () => {
           className="scroll-mt-16"
         >
           <Ready4AI />
+        </div> */}
+        <div
+          id="target"
+          ref={(el) => {
+            sectionRefs.current[1] = el;
+          }}
+          className="scroll-mt-16"
+        >
+          {<Target />}
         </div>
         <div
           id="schooltour"
@@ -95,8 +106,9 @@ const HomePage = () => {
           className="scroll-mt-28"
         >
           <SchoolTour />
+          <Activities />
         </div>
-        <div
+        {/* <div
           id="activities"
           ref={(el) => {
             sectionRefs.current[2] = el;
@@ -104,7 +116,7 @@ const HomePage = () => {
           className="scroll-mt-16"
         >
           <Activities />
-        </div>
+        </div> */}
         <div
           id="learning"
           ref={(el) => {
@@ -130,7 +142,7 @@ const HomePage = () => {
           }}
           className="scroll-mt-16"
         >
-          <Discussion />
+          {/* <Discussion /> */}
         </div>
         <div
           id="network"

@@ -1,64 +1,64 @@
-import { Image } from "antd";
+import { Image } from 'antd';
 
-import Dev7 from "../../assets/intro/1.png";
-import Dev8 from "../../assets/intro/2.png";
-import Dev9 from "../../assets/intro/3.png";
-import Dev10 from "../../assets/intro/4.png";
+import Dev7 from '../../assets/intro/1.png';
+import Dev8 from '../../assets/intro/2.png';
+import Dev9 from '../../assets/intro/3.png';
+import Dev10 from '../../assets/intro/4.png';
 
 const activities = [
   {
     image: Dev7,
-    title: "AI Challenges – Khám phá năng lực AI của chính bạn",
-    content: "Tham gia bài đánh giá ứng dụng AI thực tiễn, giúp bạn:",
+    title: 'AI Challenges – Khám phá năng lực AI của chính bạn',
+    content: 'Tham gia bài đánh giá ứng dụng AI thực tiễn, giúp bạn:',
     description: [
-      "Hiểu rõ điểm mạnh và hạn chế khi sử dụng AI",
-      "Xác định vị trí hiện tại trong hành trình phát triển năng lực số",
-      "Nhận bản đồ năng lực cá nhân hóa kèm định hướng theo ngành học",
-      "Đây là bước khởi đầu giúp sinh viên làm chủ công cụ, nâng cao tư duy, và sẵn sàng chuyển mình trong kỷ nguyên AI.    ",
+      'Hiểu rõ điểm mạnh và hạn chế khi sử dụng AI',
+      'Xác định vị trí hiện tại trong hành trình phát triển năng lực số',
+      'Nhận bản đồ năng lực cá nhân hóa kèm định hướng theo ngành học',
+      'Đây là bước khởi đầu giúp sinh viên làm chủ công cụ, nâng cao tư duy, và sẵn sàng chuyển mình trong kỷ nguyên AI.    ',
     ],
   },
   {
     image: Dev8,
-    title: "SEMINAR: #ReadyforAI",
+    title: 'SEMINAR: #ReadyforAI',
     description: [
-      "Được truyền cảm hứng từ chuyên gia và người thật – việc thật, đang tiên phong ứng dụng AI trong ngành Công nghệ Thông tin",
-      "Cập nhật góc nhìn thực tiễn về sự phát triển và ứng dụng AI trong học tập, công việc và phát triển phần mềm",
-      "Phân tích tác động của AI đến các vai trò nghề nghiệp trong ngành CNTT, đặc biệt là lập trình viên và kỹ sư phần mềm",
-      "Định hình lại tư duy nghề nghiệp và xác định kỹ năng cốt lõi cần chuẩn bị để thích nghi và phát triển bền vững trong kỷ nguyên AI",
+      'Được truyền cảm hứng từ chuyên gia và người thật – việc thật, đang tiên phong ứng dụng AI trong ngành Công nghệ Thông tin',
+      'Cập nhật góc nhìn thực tiễn về sự phát triển và ứng dụng AI trong học tập, công việc và phát triển phần mềm',
+      'Phân tích tác động của AI đến các vai trò nghề nghiệp trong ngành CNTT, đặc biệt là lập trình viên và kỹ sư phần mềm',
+      'Định hình lại tư duy nghề nghiệp và xác định kỹ năng cốt lõi cần chuẩn bị để thích nghi và phát triển bền vững trong kỷ nguyên AI',
     ],
   },
   {
     image: Dev9,
-    title: "Trải nghiệm – Kết nối cộng đồng",
+    title: 'Trải nghiệm – Kết nối cộng đồng',
     description: [
-      "Trải nghiệm đánh giá năng lực cùng AI, tham gia hoạt động nhóm thực tiễn, và kết nối cùng mentor, diễn giả, doanh nghiệp.",
-      "Làm việc nhóm – cùng giải quyết thử thách trong thời gian thực",
-      "Giao lưu cùng mentor và các khách mời đã ứng dụng AI vào công việc",
-      "Mở rộng kết nối với cộng đồng sinh viên, chuyên gia và các tổ chức đang dẫn đầu chuyển đổi số",
+      'Trải nghiệm đánh giá năng lực cùng AI, tham gia hoạt động nhóm thực tiễn, và kết nối cùng mentor, diễn giả, doanh nghiệp.',
+      'Làm việc nhóm – cùng giải quyết thử thách trong thời gian thực',
+      'Giao lưu cùng mentor và các khách mời đã ứng dụng AI vào công việc',
+      'Mở rộng kết nối với cộng đồng sinh viên, chuyên gia và các tổ chức đang dẫn đầu chuyển đổi số',
     ],
     conclusion:
-      "Đây là cơ hội để sinh viên thực hành – phản biện – kết nối và bắt đầu hành trình khám phá năng lực bản thân trong kỷ nguyên AI.",
+      'Đây là cơ hội để sinh viên thực hành – phản biện – kết nối và bắt đầu hành trình khám phá năng lực bản thân trong kỷ nguyên AI.',
   },
   {
     image: Dev10,
-    title: "Trải Nghiệm Gian Hàng Doanh Nghiệp",
+    title: 'Trải Nghiệm Gian Hàng Doanh Nghiệp',
     content:
-      "Khám phá khu vực trưng bày và tương tác trực tiếp với các sản phẩm, công nghệ đến từ các doanh nghiệp đồng hành cùng chương trình.",
-    reason: "Tại đây, sinh viên sẽ có cơ hội:",
+      'Khám phá khu vực trưng bày và tương tác trực tiếp với các sản phẩm, công nghệ đến từ các doanh nghiệp đồng hành cùng chương trình.',
+    reason: 'Tại đây, sinh viên sẽ có cơ hội:',
     description: [
-      "Trải nghiệm sản phẩm công nghệ thực tế ngay tại sự kiện",
-      "Tìm hiểu cách công nghệ được triển khai trong môi trường doanh nghiệp",
-      "Giao lưu, trao đổi cùng đại diện các công ty công nghệ – từ startup đến doanh nghiệp lớn",
+      'Trải nghiệm sản phẩm công nghệ thực tế ngay tại sự kiện',
+      'Tìm hiểu cách công nghệ được triển khai trong môi trường doanh nghiệp',
+      'Giao lưu, trao đổi cùng đại diện các công ty công nghệ – từ startup đến doanh nghiệp lớn',
     ],
     conclusion:
-      "Một không gian mở để sinh viên kết nối, quan sát thực tiễn và hiểu rõ hơn về cách công nghệ vận hành trong đời sống và công việc.",
+      'Một không gian mở để sinh viên kết nối, quan sát thực tiễn và hiểu rõ hơn về cách công nghệ vận hành trong đời sống và công việc.',
   },
 ];
 
 const Activities = () => {
   return (
-    <div className="bg-orange-100/50 md:p-10 lg:p-16 py-6">
-      <div className="md:text-4xl lg:text-5xl text-2xl font-bold text-center md:mb-6 mb-2 uppercase text-orange-700">
+    <div className="bg-[#faf0e4] md:p-10 lg:p-16 py-6">
+      <div className="md:text-4xl lg:text-5xl text-2xl font-bold text-center md:mb-6 mb-2 uppercase text-[#ff6900]">
         Hoạt động
       </div>
       <div className="text-center md:text-xl text-lg font-medium animate-fade-in-up delay-200 md:mb-6 mb-2 p-4 transition-all duration-1000 hover:text-orange-700">
@@ -72,7 +72,7 @@ const Activities = () => {
             className={`
               block
               md:flex
-              ${idx % 2 === 1 ? "md:flex-row-reverse" : "md:flex-row"}
+              ${idx % 2 === 1 ? 'md:flex-row-reverse' : 'md:flex-row'}
               w-full
             `}
           >
@@ -87,7 +87,7 @@ const Activities = () => {
             <div className="flex flex-col gap-4 md:p-8 p-4 w-full md:w-1/2 justify-start">
               <div
                 className={`md:text-2xl text-lg font-bold text-orange-600 ${
-                  idx % 2 === 1 ? "md:text-right" : "md:text-left"
+                  idx % 2 === 1 ? 'md:text-right' : 'md:text-left'
                 }`}
               >
                 {activity.title}

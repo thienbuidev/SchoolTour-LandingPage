@@ -1,17 +1,17 @@
-import { Layout } from "antd";
+import { Layout } from 'antd';
 
 const { Header } = Layout;
 
 const navs = [
-  { id: "introduction", label: "Giới thiệu" },
-  { id: "ready4ai", label: "#Ready4AI" },
-  { id: "schooltour", label: "School Tour 2025" },
-  { id: "activities", label: "Hoạt động" },
-  { id: "learning", label: "Học tập" },
-  { id: "achievement", label: "Thành tựu" },
-  { id: "discussion", label: "Tọa đàm" },
-  { id: "network", label: "Kết nối" },
-  { id: "speakers", label: "Diễn giả" },
+  { id: 'introduction', label: 'Giới thiệu' },
+  // { id: "ready4ai", label: "#Ready4AI" },
+  { id: 'schooltour', label: 'School Tour 2025' },
+  // { id: 'activities', label: 'Hoạt động' },
+  { id: 'learning', label: 'Học tập' },
+  { id: 'achievement', label: 'Thành tựu' },
+  // { id: "discussion", label: "Tọa đàm" },
+  { id: 'network', label: 'Đối tác' },
+  { id: 'speakers', label: 'Chuyên gia đồng hành' },
 ];
 
 const HeaderDevplus = ({ activeSection }: { activeSection: string }) => {
@@ -21,11 +21,11 @@ const HeaderDevplus = ({ activeSection }: { activeSection: string }) => {
         <div
           key={nav.id}
           className={`!px-2 !py-1 leading-8 rounded-lg !text-md transition-all duration-200 cursor-pointer ${
-            activeSection === nav.id ? "p-2 bg-orange-500 text-white" : ""
+            activeSection === nav.id ? 'p-2 bg-orange-500 text-white' : ''
           }`}
           onClick={() => {
             const el = document.getElementById(nav.id);
-            if (el) el.scrollIntoView({ behavior: "smooth", block: "start" });
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
           }}
         >
           <p>{nav.label}</p>

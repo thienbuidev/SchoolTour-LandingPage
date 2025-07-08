@@ -1,6 +1,6 @@
-import { Image } from "antd";
+import { Image } from 'antd';
 // import { FaChalkboardTeacher, FaRobot, FaUsers } from "react-icons/fa";
-import PymaridIC from "../../assets/pymarid.png";
+import PymaridIC from '../../assets/pymarid.png';
 
 const Ready4AIPrograms = () => {
   return (
@@ -63,9 +63,15 @@ const Ready4AIPrograms = () => {
           preview={false}
           className="p-4 md:p-0"
         />
-        <div className="flex gap-2 flex-row md:flex-col relative text-3xl md:text-5xl lg:text-6xl md:px-6 mt-0 md:mt-4 py-2 pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-yellow-400 before:to-red-500">
-          <h1 className="font-semibold">DevPlus</h1>
-          <h1 className="text-orange-500 font-semibold">Philosophy</h1>
+        <div className="flex gap-2 flex-row md:flex-col relative text-3xl md:text-5xl lg:text-6xl md:px-6 mt-0 md:mt-4 py-2 pl-4 before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-yellow-400 before:to-red-500 max-w-[600px]">
+          <div className="md:text-4xl lg:text-5xl text-2xl font-bold md:mb-6 mb-2 uppercase text-[#ff6900]">
+            KHUNG NĂNG LỰC READY FOR AI
+          </div>
+          <div className="md:text-xl text-lg font-medium animate-fade-in-up delay-200 md:mb-6 mb-2 p-4 transition-all duration-1000 hover:text-orange-700">
+            Khung năng lực Ready for AI của DevPlus được xác lập dựa trên yêu
+            cầu thực tế từ doanh nghiệp và được Sở Khoa học & Công nghệ ghi nhận
+            như một tiêu chuẩn định hướng đào tạo nguồn lực AI.
+          </div>
         </div>
       </div>
     </div>

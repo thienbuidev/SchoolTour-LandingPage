@@ -1,6 +1,6 @@
-import { Image } from "antd";
-import Devplus2 from "../../assets/devplus5D.png";
-import { useEffect, useRef, useState } from "react";
+import { Image } from 'antd';
+import Devplus2 from '../../assets/devplus5D.png';
+import { useEffect, useRef, useState } from 'react';
 
 const SchoolTour = () => {
   const [zoomed, setZoomed] = useState(false);
@@ -20,7 +20,7 @@ const SchoolTour = () => {
   }, []);
 
   return (
-    <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-4 max-w-[1400px] mx-auto md:p-8 lg:p-16 p-4">
+    <div className="grid md:grid-cols-2 grid-cols-1 md:gap-10 gap-4 max-w-[1400px] mx-auto md:p-8 lg:p-16 p-4 bg-[#faf0e4]">
       <div className="flex flex-col justify-center items-center">
         <div className="md:text-5xl lg:text-6xl text-3xl font-bold text-center md:mb-10 mb-6 uppercase bg-gradient-to-r from-orange-400 via-yellow-400 to-red-500 bg-clip-text text-transparent">
           SCHOOL TOUR 2025
@@ -47,7 +47,7 @@ const SchoolTour = () => {
         <div
           ref={imgRef}
           className={`transition-transform duration-700 ease-out ${
-            zoomed ? "scale-100" : "scale-90 opacity-0"
+            zoomed ? 'scale-100' : 'scale-90 opacity-0'
           }`}
         >
           <Image

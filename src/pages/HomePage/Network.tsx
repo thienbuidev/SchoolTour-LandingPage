@@ -1,131 +1,131 @@
-import DevPlusLogo from "../../assets/devplus.png";
-import SKHCNLogo from "../../assets/skhcn.png";
-import GDGLogo from "../../assets/gdg.png";
-import AILeaderLogo from "../../assets/aileadervn.png";
-import CompanyCard from "./CompanyCard";
+import DevPlusLogo from '../../assets/devplus.png';
+import SKHCNLogo from '../../assets/skhcn.png';
+import GDGLogo from '../../assets/gdg.png';
+import AILeaderLogo from '../../assets/aileadervn.png';
+import CompanyCard from './CompanyCard';
 
-import RSNLogo from "../../assets/company/MOZIASOFT.png";
-import SalesforceLogo from "../../assets/company/chatfly.svg";
-import MXLogo from "../../assets/company/cmc-global.png";
-import SamsungLogo from "../../assets/company/edtronaut.png";
-import AHEALogo from "../../assets/company/EM&AI.png";
-import AdvizexLogo from "../../assets/company/Enable-Startup.png";
-import TwoCRSILogo from "../../assets/company/enouvo.png";
-import CDWLogo from "../../assets/company/GDG.png";
-import HPCLogo from "../../assets/company/heatmob.png";
-import AMAXLogo from "../../assets/company/Logo-Rikkei.png";
-import NVIDIAGLogo from "../../assets/company/madison-technologies.png";
-import EnouvoLogo from "../../assets/company/Mor.png";
-import RikeiLogo from "../../assets/company/MOZIASOFT.png";
-import RikaiLogo from "../../assets/company/mrp.png";
-import CMCLogo from "../../assets/company/Napa global.png";
-import EnableStartupLogo from "../../assets/company/Paracel.png";
-import STLogo from "../../assets/company/PSCD.png";
-import ParacelLogo from "../../assets/company/RIKAI.png";
-import NAPALogo from "../../assets/company/techchain.png";
-import SYNOPSYLogo from "../../assets/company/tomosia.png";
+import RSNLogo from '../../assets/company/MOZIASOFT.png';
+import SalesforceLogo from '../../assets/company/chatfly.svg';
+import MXLogo from '../../assets/company/cmc-global.png';
+import SamsungLogo from '../../assets/company/edtronaut.png';
+import AHEALogo from '../../assets/company/EM&AI.png';
+import AdvizexLogo from '../../assets/company/Enable-Startup.png';
+import TwoCRSILogo from '../../assets/company/enouvo.png';
+import CDWLogo from '../../assets/company/GDG.png';
+import HPCLogo from '../../assets/company/heatmob.png';
+import AMAXLogo from '../../assets/company/Logo-Rikkei.png';
+import NVIDIAGLogo from '../../assets/company/madison-technologies.png';
+import EnouvoLogo from '../../assets/company/Mor.png';
+import RikeiLogo from '../../assets/company/MOZIASOFT.png';
+import RikaiLogo from '../../assets/company/mrp.png';
+import CMCLogo from '../../assets/company/Napa global.png';
+import EnableStartupLogo from '../../assets/company/Paracel.png';
+import STLogo from '../../assets/company/PSCD.png';
+import ParacelLogo from '../../assets/company/RIKAI.png';
+import NAPALogo from '../../assets/company/techchain.png';
+import SYNOPSYLogo from '../../assets/company/tomosia.png';
 
 const organizations = [
   {
-    name: "DevPlus",
+    name: 'DevPlus',
     image: DevPlusLogo,
   },
   {
-    name: "SKHCN",
+    name: 'SKHCN',
     image: SKHCNLogo,
   },
 ];
 
 const companion = [
   {
-    name: "GDG",
+    name: 'GDG',
     image: GDGLogo,
   },
   {
-    name: "AILeader",
+    name: 'AILeader',
     image: AILeaderLogo,
   },
 ];
 
 const partners = [
   {
-    name: "MOZIASOFT",
+    name: 'MOZIASOFT',
     image: RSNLogo,
   },
   {
-    name: "AVOCA",
+    name: 'AVOCA',
     image: SalesforceLogo,
   },
   {
-    name: "chatfly",
+    name: 'chatfly',
     image: MXLogo,
   },
   {
-    name: "cmc",
+    name: 'cmc',
     image: SamsungLogo,
   },
   {
-    name: "emai",
+    name: 'emai',
     image: AHEALogo,
   },
   {
-    name: "enablestartup",
+    name: 'enablestartup',
     image: AdvizexLogo,
   },
   {
-    name: "enouvo",
+    name: 'enouvo',
     image: TwoCRSILogo,
   },
   {
-    name: "gdg",
+    name: 'gdg',
     image: CDWLogo,
   },
   {
-    name: "heatmob",
+    name: 'heatmob',
     image: HPCLogo,
   },
   {
-    name: "edtronaut",
+    name: 'edtronaut',
     image: AMAXLogo,
   },
   {
-    name: "pscd",
+    name: 'pscd',
     image: NVIDIAGLogo,
   },
   {
-    name: "rikai",
+    name: 'rikai',
     image: EnouvoLogo,
   },
   {
-    name: "Rikei",
+    name: 'Rikei',
     image: RikeiLogo,
   },
   {
-    name: "madison",
+    name: 'madison',
     image: RikaiLogo,
   },
   {
-    name: "mor",
+    name: 'mor',
     image: CMCLogo,
   },
   {
-    name: "mrp",
+    name: 'mrp',
     image: EnableStartupLogo,
   },
   {
-    name: "napa",
+    name: 'napa',
     image: STLogo,
   },
   {
-    name: "Paracel",
+    name: 'Paracel',
     image: ParacelLogo,
   },
   {
-    name: "techchain",
+    name: 'techchain',
     image: NAPALogo,
   },
   {
-    name: "tomosia",
+    name: 'tomosia',
     image: SYNOPSYLogo,
   },
 ];
@@ -147,7 +147,7 @@ const Network = () => {
       </div>
       <div className="md:p-20 p-4 relative">
         <div className="flex flex-col sm:gap-8 md:gap-10 gap-4 max-w-[1200px] mx-auto">
-          <div className="md:text-5xl text-3xl font-bold text-center uppercase text-orange-700 animate-fade-in-up transition-all duration-1000 hover:scale-105 hover:text-orange-800">
+          <div className="md:text-5xl text-3xl font-bold text-center uppercase text-[#ff6900] animate-fade-in-up transition-all duration-1000 hover:scale-105 hover:text-orange-800">
             Kết nối
           </div>
           <div className="text-center md:text-xl text-lg font-medium animate-fade-in-up delay-200 transition-all duration-1000 hover:text-orange-700">
@@ -156,7 +156,7 @@ const Network = () => {
           </div>
           {/* <Image src={NetworkImage} alt="Network" preview={false} /> */}
           <div className="flex flex-col gap-4 animate-fade-in-up delay-400 transition-all duration-1000">
-            <div className="md:text-2xl text-xl font-bold text-center uppercase text-orange-700 transition-all duration-300 hover:scale-105 hover:text-orange-800">
+            <div className="md:text-2xl text-xl font-bold text-center uppercase text-[#ff6900] transition-all duration-300 hover:scale-105 hover:text-orange-800">
               Đơn vị tổ chức
             </div>
             <div className="flex flex-row items-center justify-center gap-4">
@@ -172,7 +172,7 @@ const Network = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 animate-fade-in-up delay-600 transition-all duration-1000">
-            <div className="text-2xl font-bold text-center uppercase text-orange-700 transition-all duration-300 hover:scale-105 hover:text-orange-800">
+            <div className="text-2xl font-bold text-center uppercase text-[#ff6900] transition-all duration-300 hover:scale-105 hover:text-orange-800">
               Đơn vị đồng hành
             </div>
             <div className="flex flex-row items-center justify-center gap-4">
@@ -188,7 +188,7 @@ const Network = () => {
             </div>
           </div>
           <div className="flex flex-col gap-4 animate-fade-in-up delay-800 transition-all duration-1000">
-            <div className="text-2xl font-bold text-center uppercase text-orange-700 transition-all duration-300 hover:scale-105 hover:text-orange-800">
+            <div className="text-2xl font-bold text-center uppercase text-[#ff6900] transition-all duration-300 hover:scale-105 hover:text-orange-800">
               Mạng lưới đối tác
             </div>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 md:gap-4 gap-2">

@@ -1,13 +1,13 @@
-import { Image, Layout } from "antd";
+import { Image, Layout } from 'antd';
 
 const { Footer } = Layout;
 
-import Logo from "../../assets/devplus2.png";
-import { FaEnvelope, FaGlobe, FaPhone } from "react-icons/fa";
+import Logo from '../../assets/devplus2.png';
+import { FaEnvelope, FaGlobe, FaPhone } from 'react-icons/fa';
 
 const FooterDevplus = () => {
   return (
-    <Footer className="bg-orange-700 flex items-center justify-center max-w-screen-2xl md:!gap-20 lg:!gap-10 gap-2 !p-4">
+    <Footer className="!bg-[#feeed8] flex items-center justify-center max-w-screen-2xl md:!gap-20 lg:!gap-10 gap-2 !p-4">
       <div className="md:p-4 p-0">
         <Image
           src={Logo}
