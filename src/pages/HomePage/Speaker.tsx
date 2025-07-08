@@ -47,7 +47,7 @@ const speakers = [
 
 const Speaker = () => {
   return (
-    <div className="bg-[] md:p-8 lg:p-16 p-4 pb-8">
+    <div className="bg-blue-50 md:p-8 lg:p-16 p-4 pb-8">
       <div className="flex flex-col gap-2 max-w-[1000px] mx-auto">
         <div className="md:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-[#ff6900]">
           Chuyên gia đồng hành
@@ -56,22 +56,22 @@ const Speaker = () => {
           {speakers.map((speaker) => (
             <div
               key={speaker.name}
-              className="flex flex-col bg-white rounded-2xl"
+              className="flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
               <Image
                 src={speaker.image}
                 alt={speaker.name}
                 preview={false}
-                className="!rounded-lg w-full object-cover md:!h-[240px] sm:!h-[220px] !h-[180px]"
+                className="w-full object-cover h-[180px] sm:h-[220px] md:h-[240px]"
               />
-              <div className="flex flex-col gap-1 md:p-4 p-2 bg-orange-400 rounded-b-lg text-white">
-                <div>
-                  <div className="font-semibold text-xl">{speaker.name}</div>
-                  <div className="">{speaker.position}</div>
+              <div className="flex-1 flex flex-col gap-1 p-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
+                <div className="font-bold text-lg md:text-xl">
+                  {speaker.name}
                 </div>
-                {/* <div className="text-md text-blue-200">
-                  {speaker.description}
-                </div> */}
+                <div className="text-sm md:text-base font-medium opacity-90">
+                  {speaker.position}
+                </div>
+                {/* <div className="text-sm text-white/80">{speaker.description}</div> */}
               </div>
             </div>
           ))}

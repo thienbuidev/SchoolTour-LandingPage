@@ -1,4 +1,4 @@
-import { Layout } from 'antd';
+import { Layout, Divider } from 'antd';
 import Introduction from './Introduction';
 import Ready4AIPrograms from './Ready4AIPrograms';
 import AchievementSection from './Achievement';
@@ -101,13 +101,23 @@ const HomePage = () => {
         <div
           id="schooltour"
           ref={(el) => {
-            sectionRefs.current[1] = el;
+            sectionRefs.current[2] = el;
           }}
           className="scroll-mt-28"
         >
           <SchoolTour />
+
+          <div className="flex justify-center bg-[#faf0e4] p-10">
+            <Divider
+              className="!w-[900px] !min-w-0 !border-[#ff6900] !border-2 rounded-full !m-0"
+              orientation="center"
+              plain
+            ></Divider>
+          </div>
+
           <Activities />
         </div>
+
         {/* <div
           id="activities"
           ref={(el) => {
