@@ -155,15 +155,15 @@ const Network = () => {
             hội thực tập và đầu ra việc làm cho sinh viên.
           </div>
           {/* <Image src={NetworkImage} alt="Network" preview={false} /> */}
-          <div className="flex flex-col gap-4 animate-fade-in-up delay-400 transition-all duration-1000">
+          <div className="flex flex-col md:gap-4 gap-2">
             <div className="md:text-2xl text-xl font-bold text-center uppercase text-[#ff6900]">
               Đơn vị tổ chức
             </div>
-            <div className="flex flex-row items-center justify-center gap-4">
+            <div className="flex flex-row items-center justify-center md:gap-4 gap-2">
               {organizations.map((org, index) => (
                 <div
                   key={org.name}
-                  className="animate-fade-in-up transition-all duration-500"
+                  className="animate-fade-in-up transition-all duration-500 w-[50%] lg:w-[286px] md:w-[228px] sm:w-[140px]"
                   style={{ animationDelay: `${600 + index * 200}ms` }}
                 >
                   <CompanyCard org={org} />
@@ -171,15 +171,15 @@ const Network = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-4">
+          <div className="flex flex-col md:gap-4 gap-2">
             <div className="text-2xl font-bold text-center uppercase text-[#ff6900]">
               Đơn vị đồng hành
             </div>
-            <div className="flex flex-row items-center justify-center gap-4">
+            <div className="flex flex-row items-center justify-center md:gap-4 gap-2">
               {companion.map((org, index) => (
                 <div
                   key={org.name}
-                  className="animate-fade-in-up transition-all duration-500"
+                  className="animate-fade-in-up transition-all duration-500 w-[50%] lg:w-[286px] md:w-[228px] sm:w-[140px]"
                   style={{ animationDelay: `${800 + index * 200}ms` }}
                 >
                   <CompanyCard org={org} />
@@ -187,8 +187,8 @@ const Network = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-4">
-            <div className="text-2xl font-bold text-center uppercase text-[#ff6900]">
+          <div className="flex flex-col gap-4 animate-fade-in-up delay-800 transition-all duration-1000">
+            <div className="text-2xl font-bold text-center uppercase text-[#ff6900] transition-all duration-300 hover:scale-105 hover:text-orange-800">
               Mạng lưới đối tác
             </div>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 md:gap-4 gap-2">

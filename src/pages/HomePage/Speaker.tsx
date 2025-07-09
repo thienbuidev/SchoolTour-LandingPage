@@ -21,7 +21,7 @@ const speakers = [
   },
   {
     name: 'Mr. Hoang Pham',
-    position: ['CEO Devplus'],
+    position: ['CEO Dev Plus'],
     image: HoangPhamImg,
     description: 'Description of speaker',
   },
@@ -52,7 +52,7 @@ const Speaker = () => {
         <div className="md:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-[#ff6900]">
           Chuyên gia đồng hành
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-4">
+        <div className="grid md:grid-cols-3 grid-cols-1 md:gap-5 gap-4">
           {speakers.map((speaker, index) => (
             <div
               key={speaker.name}
