@@ -49,7 +49,7 @@ const Speaker = () => {
   return (
     <div className="md:p-8 lg:p-16 p-4 pb-8">
       <div className="flex flex-col gap-2 max-w-[1000px] mx-auto">
-        <div className="md:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-[#ff6900]">
+        <div className="md:text-5xl lg:text-6xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-[#ff6900]">
           Chuyên gia đồng hành
         </div>
         <div className="grid md:grid-cols-3 grid-cols-1 md:gap-5 gap-4">
@@ -63,7 +63,7 @@ const Speaker = () => {
                 src={speaker.image}
                 alt={speaker.name}
                 preview={false}
-                className="w-full object-cover h-[180px] sm:h-[220px] md:h-[240px] rounded-lg"
+                className="w-full object-cover h-[180px] sm:h-[220px] md:h-[240px] rounded-t-lg"
               />
               <div className="flex-1 flex flex-col gap-1 p-4 text-white">
                 <div className="font-bold text-orange-500 text-lg md:text-xl">

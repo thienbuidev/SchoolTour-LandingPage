@@ -48,7 +48,7 @@ const AIStudent: React.FC = () => {
             10,000
           </ZoomText>
         </h2>
-        <p className="text-lg sm:text-xl md:text-2xl font-medium text-black leading-snug max-w-2xl pt-3">
+        <p className="text-md sm:text-xl md:text-2xl font-medium text-black leading-snug max-w-2xl lg:pt-8">
           Sinh viên đã sẵn sàng bước vào thời đại
           <span className="text-orange-500 font-semibold"> AI</span>
         </p>

@@ -18,10 +18,10 @@ const FooterDevplus = () => {
       </div>
       <div className="flex flex-col gap-2 md:flex-row md:gap-4">
         <div className="flex flex-col gap-2 items-start justify-center">
-          <div className="text-orange-700 md:text-2xl text-xl font-bold ">
+          <div className="text-orange-600 md:text-2xl text-xl font-bold ">
             READY FOR AI
           </div>
-          <div className="text-orange-600 md:text-xl text-sm font-semibold">
+          <div className="text-orange-500 md:text-xl text-sm font-semibold">
             VỮNG BƯỚC TƯƠNG LAI CÙNG DEVPLUS
           </div>
         </div>
