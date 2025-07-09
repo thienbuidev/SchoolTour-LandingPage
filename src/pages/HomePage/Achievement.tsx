@@ -67,7 +67,7 @@ const Counter: React.FC<CounterProps> = ({
 
 const AchievementSection: React.FC = () => {
   return (
-    <div className="py-10 px-4 md:px-10 max-w-[1200px] mx-auto bg-blue-50">
+    <div className="py-10 px-4 md:px-10 max-w-[1200px] mx-auto">
       <Row gutter={32} align="middle">
         <Col
           xs={24}

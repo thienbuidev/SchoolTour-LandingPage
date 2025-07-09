@@ -16,7 +16,7 @@ import HPCLogo from '../../assets/company/heatmob.png';
 import AMAXLogo from '../../assets/company/Logo-Rikkei.png';
 import NVIDIAGLogo from '../../assets/company/madison-technologies.png';
 import EnouvoLogo from '../../assets/company/Mor.png';
-import RikeiLogo from '../../assets/company/MOZIASOFT.png';
+import RikeiLogo from '../../assets/company/Avoca.png';
 import RikaiLogo from '../../assets/company/mrp.png';
 import CMCLogo from '../../assets/company/Napa global.png';
 import EnableStartupLogo from '../../assets/company/Paracel.png';

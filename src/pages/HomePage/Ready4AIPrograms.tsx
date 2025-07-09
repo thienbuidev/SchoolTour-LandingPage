@@ -9,16 +9,19 @@ const Ready4AIPrograms = () => {
           src={PymaridIC}
           alt="Ready4AI"
           preview={false}
-          className="w-full max-w-xs sm:min-w-xs md:max-w-md lg:max-w-lg p-2 md:p-0"
+          className="w-full max-w-sm sm:min-w-xs md:min-w-sm lg:min-w-lg p-2 md:p-0"
         />
 
         <div className="relative text-left md:text-justify max-w-full md:max-w-xl lg:max-w-2xl pl-4 md:pl-6">
           <div className="before:content-[''] before:absolute before:left-0 before:top-0 before:bottom-0 before:w-1 before:bg-gradient-to-b before:from-yellow-400 before:to-red-500" />
 
           <div className="ml-2 md:ml-4 space-y-4">
-            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase">
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-500">
-                KHUNG NĂNG LỰC READY FOR AI
+            <div className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-extrabold uppercase leading-tight">
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-yellow-500 to-orange-500">
+                KHUNG NĂNG LỰC
+              </span>
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-orange-700 drop-shadow-lg">
+                READY FOR AI
               </span>
             </div>
 

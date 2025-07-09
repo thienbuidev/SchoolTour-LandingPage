@@ -7,8 +7,8 @@ import AILeaderIC from '../../assets/aileadervn.png';
 const Introduction = () => {
   return (
     <div
-      className="flex flex-col justify-start items-center pt-[90px]"
-      style={{ minHeight: 'calc(100vh - 90px)' }}
+      className="min-h-screen flex flex-col justify-start items-center pt-[90px]"
+      style={{ minHeight: 'calc(100vh - 65px)' }}
     >
       <div className="flex flex-row justify-between items-center gap-4 sm:gap-20 md:gap-40 h-full">
         <div className="flex flex-col justify-center items-center gap-3">

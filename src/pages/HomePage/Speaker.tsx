@@ -9,37 +9,37 @@ import SourmackDarbouyImg from '../../assets/speakers/SourmackDarbouy.jpg';
 const speakers = [
   {
     name: 'Mr. Duong Tran',
-    position: 'Head of Engineering Alpha Bits',
+    position: ['Head of Engineering Alpha Bits', 'CTO Co-founder at SENCAR'],
     image: DuongTranImg,
     description: 'Description of speaker',
   },
   {
     name: 'Mr. Hai Nguyen',
-    position: 'CEO at AvocaAI',
+    position: ['Co-founder & CEO at AvocaAI'],
     image: HaiNguyenImg,
     description: 'Description of speaker',
   },
   {
     name: 'Mr. Hoang Pham',
-    position: 'CEO Devplus',
+    position: ['CEO Devplus'],
     image: HoangPhamImg,
     description: 'Description of speaker',
   },
   {
     name: 'Mr. Quoc Thao',
-    position: 'CEO AMIT',
+    position: ['CEO AMIT'],
     image: QuocThaoImg,
     description: 'Description of speaker',
   },
   {
     name: 'Mr. Stephen Warren',
-    position: 'Sales Director, APAC at Atility & Abeeway ',
+    position: ['Senior Project Manager Company X'],
     image: STEPHENWARRENImg,
     description: 'Description of speaker',
   },
   {
     name: 'Mr. Sourmack Darbouy',
-    position: 'Senior Project Manager Company X',
+    position: ['Sales Director, APAC at Atility & Abeeway'],
     image: SourmackDarbouyImg,
     description: 'Description of speaker',
   },
@@ -47,16 +47,17 @@ const speakers = [
 
 const Speaker = () => {
   return (
-    <div className="bg-blue-50 md:p-8 lg:p-16 p-4 pb-8">
+    <div className="md:p-8 lg:p-16 p-4 pb-8">
       <div className="flex flex-col gap-2 max-w-[1000px] mx-auto">
         <div className="md:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-[#ff6900]">
           Chuyên gia đồng hành
         </div>
         <div className="grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-3">
-          {speakers.map((speaker) => (
+          {speakers.map((speaker, index) => (
             <div
               key={speaker.name}
-              className="flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition-shadow duration-300"
+              className="flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in-up"
+              style={{ animationDelay: `${200 + index * 100}ms` }}
             >
               <Image
                 src={speaker.image}
@@ -69,7 +70,9 @@ const Speaker = () => {
                   {speaker.name}
                 </div>
                 <div className="text-sm md:text-base font-medium opacity-90">
-                  {speaker.position}
+                  {speaker.position.map((pos: string, idx: number) => (
+                    <div key={idx}>{pos}</div>
+                  ))}
                 </div>
                 {/* <div className="text-sm text-white/80">{speaker.description}</div> */}
               </div>
@@ -77,6 +80,23 @@ const Speaker = () => {
           ))}
         </div>
       </div>
+      <style>{`
+        @keyframes fade-in-up {
+          from {
+            opacity: 0;
+            transform: translateY(30px);
+          }
+          to {
+            opacity: 1;
+            transform: translateY(0);
+          }
+        }
+        
+        .animate-fade-in-up {
+          animation: fade-in-up 0.8s ease-out forwards;
+          opacity: 0;
+        }
+      `}</style>
     </div>
   );
 };

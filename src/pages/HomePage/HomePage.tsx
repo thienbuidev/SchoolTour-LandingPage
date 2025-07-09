@@ -79,6 +79,7 @@ const HomePage = () => {
           className="scroll-mt-24"
         >
           <Introduction />
+          <Target />
         </div>
         {/* <div
           id="ready4ai"
@@ -90,15 +91,6 @@ const HomePage = () => {
           <Ready4AI />
         </div> */}
         <div
-          id="target"
-          ref={(el) => {
-            sectionRefs.current[1] = el;
-          }}
-          className="scroll-mt-16"
-        >
-          {<Target />}
-        </div>
-        <div
           id="schooltour"
           ref={(el) => {
             sectionRefs.current[2] = el;
@@ -109,7 +101,7 @@ const HomePage = () => {
 
           <div className="flex justify-center bg-[#faf0e4] p-10">
             <Divider
-              className="!w-[900px] !min-w-0 !border-[#ff6900] !border-2 rounded-full !m-0"
+              className="!w-[600px] !min-w-0 !border-[#ff6900] !border-2 rounded-full !m-0"
               orientation="center"
               plain
             ></Divider>
