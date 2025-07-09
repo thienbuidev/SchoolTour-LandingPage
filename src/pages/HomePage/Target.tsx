@@ -15,7 +15,7 @@ const ZoomText: React.FC<{
 
           setTimeout(() => {
             setScale('normal');
-          }, 450);
+          }, 600);
         }
       },
       { threshold: 0.5 }
@@ -31,7 +31,7 @@ const ZoomText: React.FC<{
       className={`inline-block transition-transform duration-700 ease-in-out ${className}`}
       style={{
         transform: scale === 'zoomOut' ? 'scale(1.75)' : 'scale(1.25)',
-        transition: 'transform 0.2s ease-in-out',
+        transition: 'transform 0.7s ease-in-out',
       }}
     >
       {children}
@@ -43,7 +43,7 @@ const AIStudent: React.FC = () => {
   return (
     <div className="bg-[#f5f5f5] px-4 sm:px-2 md:px-10 py-3 sm:py-2 md:py-5 lg:py-10">
       <div className="flex flex-col items-center text-center">
-        <h2 className="text-8xl sm:text-8xl md:text-8xl lg:text-9xl font-extrabold mb-4">
+        <h2 className="text-4xl sm:text-5xl md:text-8xl lg:text-9xl font-extrabold mb-4">
           <ZoomText className="text-transparent bg-clip-text bg-gradient-to-r from-orange-500 to-yellow-400 ">
             10,000
           </ZoomText>

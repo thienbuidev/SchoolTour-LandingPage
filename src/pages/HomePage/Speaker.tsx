@@ -52,24 +52,24 @@ const Speaker = () => {
         <div className="md:text-5xl text-3xl font-bold text-center md:mb-12 mb-2 uppercase text-[#ff6900]">
           Chuyên gia đồng hành
         </div>
-        <div className="grid md:grid-cols-3 grid-cols-2 md:gap-4 gap-3">
+        <div className="grid md:grid-cols-3 grid-cols-2 md:gap-5 gap-4">
           {speakers.map((speaker, index) => (
             <div
               key={speaker.name}
-              className="flex flex-col bg-white rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 hover:scale-105 animate-fade-in-up"
+              className="flex flex-col rounded-lg bg-white border-r-4 border-b-4 border-orange-500 justify-center transition-all duration-300 hover:scale-105 hover:shadow-xl hover:shadow-orange-200 hover:border-orange-600 transform hover:-translate-y-1"
               style={{ animationDelay: `${200 + index * 100}ms` }}
             >
               <Image
                 src={speaker.image}
                 alt={speaker.name}
                 preview={false}
-                className="w-full object-cover h-[180px] sm:h-[220px] md:h-[240px]"
+                className="w-full object-cover h-[180px] sm:h-[220px] md:h-[240px] rounded-lg"
               />
-              <div className="flex-1 flex flex-col gap-1 p-4 bg-gradient-to-r from-orange-500 to-orange-600 text-white">
-                <div className="font-bold text-lg md:text-xl">
+              <div className="flex-1 flex flex-col gap-1 p-4 text-white">
+                <div className="font-bold text-orange-500 text-lg md:text-xl">
                   {speaker.name}
                 </div>
-                <div className="text-sm md:text-base font-medium opacity-90">
+                <div className="text-sm text-gray-800 md:text-base font-medium opacity-90">
                   {speaker.position.map((pos: string, idx: number) => (
                     <div key={idx}>{pos}</div>
                   ))}

@@ -7,23 +7,22 @@ import Activities from './Activities';
 // import Discussion from './Discussion';
 import Network from './Network';
 import HeaderDevplus from './HeaderDevplus';
-// import FooterDevplus from "./FooterDevplus";
+import FooterDevplus from './FooterDevplus';
 import './homepage.css';
 import Speaker from './Speaker';
 import { useEffect, useRef, useState } from 'react';
-import FooterDevplus from './FooterDevplus';
 // import Ready4AI from "./Ready4AI";
 import Target from './Target';
 
 const sectionIds = [
   'introduction',
-  'target',
+  // 'target',
   // 'ready4ai',
   'schooltour',
-  // 'activities',
+  'activities',
   'learning',
   'achievement',
-  'discussion',
+  // 'discussion',
   'network',
   'speakers',
 ];
@@ -93,24 +92,20 @@ const HomePage = () => {
         <div
           id="schooltour"
           ref={(el) => {
-            sectionRefs.current[2] = el;
+            sectionRefs.current[1] = el;
           }}
-          className="scroll-mt-28"
+          className="scroll-mt-16"
         >
           <SchoolTour />
-
-          <div className="flex justify-center bg-[#faf0e4] p-10">
-            <Divider
-              className="!w-[600px] !min-w-0 !border-[#ff6900] !border-2 rounded-full !m-0"
-              orientation="center"
-              plain
-            ></Divider>
-          </div>
-
-          <Activities />
         </div>
-
-        {/* <div
+        <div className="flex justify-center bg-[#faf0e4] p-10">
+          <Divider
+            className="!w-[600px] !min-w-0 !border-[#ff6900] !border-2 rounded-full !m-0"
+            orientation="center"
+            plain
+          ></Divider>
+        </div>
+        <div
           id="activities"
           ref={(el) => {
             sectionRefs.current[2] = el;
@@ -118,7 +113,7 @@ const HomePage = () => {
           className="scroll-mt-16"
         >
           <Activities />
-        </div> */}
+        </div>
         <div
           id="learning"
           ref={(el) => {

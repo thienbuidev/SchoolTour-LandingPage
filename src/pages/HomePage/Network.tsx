@@ -147,16 +147,16 @@ const Network = () => {
       </div>
       <div className="md:p-20 p-4 relative">
         <div className="flex flex-col sm:gap-8 md:gap-10 gap-4 max-w-[1200px] mx-auto">
-          <div className="md:text-5xl text-3xl font-bold text-center uppercase text-[#ff6900] animate-fade-in-up transition-all duration-1000 hover:scale-105 hover:text-orange-800">
+          <div className="md:text-5xl text-3xl font-bold text-center uppercase text-[#ff6900]">
             Đối tác
           </div>
-          <div className="text-center md:text-xl text-lg font-medium animate-fade-in-up delay-200 transition-all duration-1000 hover:text-orange-700">
+          <div className="text-center md:text-xl text-lg font-medium ">
             DevPlus kết nối với nhiều đối tác doanh nghiệp uy tín để đảm bảo cơ
             hội thực tập và đầu ra việc làm cho sinh viên.
           </div>
           {/* <Image src={NetworkImage} alt="Network" preview={false} /> */}
           <div className="flex flex-col gap-4 animate-fade-in-up delay-400 transition-all duration-1000">
-            <div className="md:text-2xl text-xl font-bold text-center uppercase text-[#ff6900] transition-all duration-300 hover:scale-105 hover:text-orange-800">
+            <div className="md:text-2xl text-xl font-bold text-center uppercase text-[#ff6900]">
               Đơn vị tổ chức
             </div>
             <div className="flex flex-row items-center justify-center gap-4">
@@ -171,8 +171,8 @@ const Network = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-4 animate-fade-in-up delay-600 transition-all duration-1000">
-            <div className="text-2xl font-bold text-center uppercase text-[#ff6900] transition-all duration-300 hover:scale-105 hover:text-orange-800">
+          <div className="flex flex-col gap-4">
+            <div className="text-2xl font-bold text-center uppercase text-[#ff6900]">
               Đơn vị đồng hành
             </div>
             <div className="flex flex-row items-center justify-center gap-4">
@@ -187,8 +187,8 @@ const Network = () => {
               ))}
             </div>
           </div>
-          <div className="flex flex-col gap-4 animate-fade-in-up delay-800 transition-all duration-1000">
-            <div className="text-2xl font-bold text-center uppercase text-[#ff6900] transition-all duration-300 hover:scale-105 hover:text-orange-800">
+          <div className="flex flex-col gap-4">
+            <div className="text-2xl font-bold text-center uppercase text-[#ff6900]">
               Mạng lưới đối tác
             </div>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 md:gap-4 gap-2">
