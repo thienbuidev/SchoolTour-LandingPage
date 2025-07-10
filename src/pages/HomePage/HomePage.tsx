@@ -1,30 +1,30 @@
-import { Layout, Divider } from 'antd';
-import Introduction from './Introduction';
-import Ready4AIPrograms from './Ready4AIPrograms';
-import AchievementSection from './Achievement';
-import SchoolTour from './SchoolTour';
-import Activities from './Activities';
+import { Layout, Divider } from "antd";
+import Introduction from "./Introduction";
+import Ready4AIPrograms from "./Ready4AIPrograms";
+import AchievementSection from "./Achievement";
+import SchoolTour from "./SchoolTour";
+import Activities from "./Activities";
 // import Discussion from './Discussion';
-import Network from './Network';
-import HeaderDevplus from './HeaderDevplus';
-import FooterDevplus from './FooterDevplus';
-import './homepage.css';
-import Speaker from './Speaker';
-import { useEffect, useRef, useState } from 'react';
+import Network from "./Network";
+import HeaderDevplus from "./HeaderDevplus";
+import FooterDevplus from "./FooterDevplus";
+import "./homepage.css";
+import Speaker from "./Speaker";
+import { useEffect, useRef, useState } from "react";
 // import Ready4AI from "./Ready4AI";
-import Target from './Target';
+import Target from "./Target";
 
 const sectionIds = [
-  'introduction',
+  "introduction",
   // 'target',
   // 'ready4ai',
-  'schooltour',
-  'activities',
-  'learning',
-  'achievement',
+  "schooltour",
+  "activities",
+  "learning",
+  "achievement",
   // 'discussion',
-  'network',
-  'speakers',
+  "network",
+  "speakers",
 ];
 
 const HomePage = () => {
@@ -106,7 +106,7 @@ const HomePage = () => {
           ></Divider>
         </div>
         <div
-          id="activities"
+          id="schooltour"
           ref={(el) => {
             sectionRefs.current[2] = el;
           }}
