@@ -1,12 +1,15 @@
-import { Image } from "antd";
-import SKHCNIC from "../../assets/skhcn.png";
-import DevPlusIC from "../../assets/devplus.png";
-import GDGIC from "../../assets/gdg.png";
-import AILeaderIC from "../../assets/aileadervn.png";
+import { Image } from 'antd';
+import SKHCNIC from '../../assets/skhcn.png';
+import DevPlusIC from '../../assets/devplus.png';
+import GDGIC from '../../assets/gdg.png';
+import AILeaderIC from '../../assets/aileadervn.png';
 
 const Introduction = () => {
   return (
-    <div className="md:min-h-screen min-h-[600px] flex flex-col justify-start items-center pt-20 md:pt-36">
+    <div
+      className="min-h-screen flex flex-col justify-start items-center pt-[90px]"
+      style={{ minHeight: 'calc(100vh - 65px)' }}
+    >
       <div className="flex flex-row justify-between items-center gap-4 sm:gap-20 md:gap-40 h-full">
         <div className="flex flex-col justify-center items-center gap-3">
           <span className="text-xl font-semibold">Đơn vị tổ chức</span>
@@ -60,12 +63,12 @@ const Introduction = () => {
             Chương trình xác định và phát triển bộ khung năng lực thời đại AI do
             Sở Khoa Học Công Nghệ Đà Nẵng chỉ đạo triển khai
           </div>
-          <div className="text-xl md:text-3xl font-semibold text-black md:max-w-5xl sm:max-w-xl">
+          {/* <div className="text-xl md:text-3xl font-semibold text-black md:max-w-5xl sm:max-w-xl">
             <span className="font-bold  text-orange-700 md:text-4xl text-3xl underline">
               10.000
             </span>{" "}
             sinh viên sẵn sàng bước vào thời đại AI
-          </div>
+          </div> */}
         </div>
       </div>
     </div>

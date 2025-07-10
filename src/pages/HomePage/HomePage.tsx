@@ -1,29 +1,30 @@
-import { Layout } from "antd";
-import Introduction from "./Introduction";
-import Ready4AIPrograms from "./Ready4AIPrograms";
-import AchievementSection from "./Achievement";
-import SchoolTour from "./SchoolTour";
-import Activities from "./Activities";
-import Discussion from "./Discussion";
-import Network from "./Network";
-import HeaderDevplus from "./HeaderDevplus";
-// import FooterDevplus from "./FooterDevplus";
-import "./homepage.css";
-import Speaker from "./Speaker";
-import { useEffect, useRef, useState } from "react";
-import FooterDevplus from "./FooterDevplus";
-import Ready4AI from "./Ready4AI";
+import { Layout, Divider } from 'antd';
+import Introduction from './Introduction';
+import Ready4AIPrograms from './Ready4AIPrograms';
+import AchievementSection from './Achievement';
+import SchoolTour from './SchoolTour';
+import Activities from './Activities';
+// import Discussion from './Discussion';
+import Network from './Network';
+import HeaderDevplus from './HeaderDevplus';
+import FooterDevplus from './FooterDevplus';
+import './homepage.css';
+import Speaker from './Speaker';
+import { useEffect, useRef, useState } from 'react';
+// import Ready4AI from "./Ready4AI";
+import Target from './Target';
 
 const sectionIds = [
-  "introduction",
-  "ready4ai",
-  "schooltour",
-  "activities",
-  "learning",
-  "achievement",
-  "discussion",
-  "network",
-  "speakers",
+  'introduction',
+  // 'target',
+  // 'ready4ai',
+  'schooltour',
+  'activities',
+  'learning',
+  'achievement',
+  // 'discussion',
+  'network',
+  'speakers',
 ];
 
 const HomePage = () => {
@@ -77,8 +78,9 @@ const HomePage = () => {
           className="scroll-mt-24"
         >
           <Introduction />
+          <Target />
         </div>
-        <div
+        {/* <div
           id="ready4ai"
           ref={(el) => {
             sectionRefs.current[1] = el;
@@ -86,15 +88,22 @@ const HomePage = () => {
           className="scroll-mt-16"
         >
           <Ready4AI />
-        </div>
+        </div> */}
         <div
           id="schooltour"
           ref={(el) => {
             sectionRefs.current[1] = el;
           }}
-          className="scroll-mt-28"
+          className="scroll-mt-16"
         >
           <SchoolTour />
+        </div>
+        <div className="flex justify-center bg-[#faf0e4] p-10">
+          <Divider
+            className="!w-[600px] !min-w-0 !border-[#ff6900] !border-2 rounded-full !m-0"
+            orientation="center"
+            plain
+          ></Divider>
         </div>
         <div
           id="activities"
@@ -130,7 +139,7 @@ const HomePage = () => {
           }}
           className="scroll-mt-16"
         >
-          <Discussion />
+          {/* <Discussion /> */}
         </div>
         <div
           id="network"

@@ -1,27 +1,27 @@
-import { Image, Layout } from "antd";
+import { Image, Layout } from 'antd';
 
 const { Footer } = Layout;
 
-import Logo from "../../assets/devplus2.png";
-import { FaEnvelope, FaGlobe, FaPhone } from "react-icons/fa";
+import Logo from '../../assets/devplus2.png';
+import { FaEnvelope, FaGlobe, FaPhone } from 'react-icons/fa';
 
 const FooterDevplus = () => {
   return (
-    <Footer className="bg-orange-700 flex items-center justify-center max-w-screen-2xl md:!gap-20 lg:!gap-10 gap-2 !p-4">
+    <Footer className="!bg-[#feeed8] flex items-center justify-center w-full md:!gap-20 lg:!gap-10 gap-2 !p-4">
       <div className="md:p-4 p-0">
         <Image
           src={Logo}
           alt="Devplus"
           preview={false}
-          className="md:!h-[200px] !h-[100px]"
+          className="md:!h-[200px] !h-[100px] object-contain"
         />
       </div>
       <div className="flex flex-col gap-2 md:flex-row md:gap-4">
         <div className="flex flex-col gap-2 items-start justify-center">
-          <div className="text-orange-700 md:text-2xl text-2xl font-bold ">
+          <div className="text-orange-600 md:text-2xl text-xl font-bold ">
             READY FOR AI
           </div>
-          <div className="text-orange-600 md:text-xl text-sm font-semibold">
+          <div className="text-orange-500 md:text-xl text-sm font-semibold">
             VỮNG BƯỚC TƯƠNG LAI CÙNG DEVPLUS
           </div>
         </div>
