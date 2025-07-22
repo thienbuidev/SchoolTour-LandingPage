@@ -137,7 +137,7 @@ const Network = () => {
           </div>
           <div className="flex flex-col gap-4 animate-fade-in-up delay-800 transition-all duration-1000">
             <div className="lg:text-2xl text-xl md:text-xl font-bold text-center uppercase text-[#ff6900]">
-              Mạng lưới đối tác
+              Mạng lưới doanh nghiệp
             </div>
             <div className="grid md:grid-cols-3 lg:grid-cols-4 grid-cols-2 md:gap-4 gap-2">
               {partners.map((org, index) => (
