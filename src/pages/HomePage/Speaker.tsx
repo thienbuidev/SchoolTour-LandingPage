@@ -1,7 +1,7 @@
 import { Image } from 'antd';
 
 import DuongTranImg from '../../assets/speakers/DuongTran.png';
-import HaiNguyenImg from '../../assets/speakers/HaiNguyen.png';
+import ThanhNhanImg from '../../assets/speakers/ThanhNhan.png';
 import HoangPhamImg from '../../assets/speakers/HoangPham.jpg';
 import QuocThaoImg from '../../assets/speakers/QuocThao.jpg';
 import STEPHENWARRENImg from '../../assets/speakers/STEPHENWARREN.jpg';
@@ -14,9 +14,9 @@ const speakers = [
     description: 'Description of speaker',
   },
   {
-    name: 'Mr. Hai Nguyen',
-    position: ['Co-founder & CEO at AvocaAI'],
-    image: HaiNguyenImg,
+    name: 'Mr. Thanh Nhan',
+    position: ['CEO Antee'],
+    image: ThanhNhanImg,
     description: 'Description of speaker',
   },
   {
