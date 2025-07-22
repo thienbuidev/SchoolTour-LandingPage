@@ -1,81 +1,81 @@
-import DevPlusLogo from '../../assets/devplus.png';
-import SKHCNLogo from '../../assets/skhcn.png';
-import GDGLogo from '../../assets/gdg.png';
-import AILeaderLogo from '../../assets/aileadervn.png';
-import CompanyCard from './CompanyCard';
+import DevPlusLogo from "../../assets/devplus.png";
+import SKHCNLogo from "../../assets/skhcn.png";
+import GDGLogo from "../../assets/gdg.png";
+import AILeaderLogo from "../../assets/aileadervn.png";
+import CompanyCard from "./CompanyCard";
 
-import Company1CMCGlobal from '../../assets/company/1.cmc-global.png';
-import Company2Mor from '../../assets/company/2.Mor.png';
-import Company3NapaGlobal from '../../assets/company/3.Napaglobal.png';
-import Company4LogoRIKAI from '../../assets/company/4.logoRIKAI.png';
-import Company5EnouvoLogo from '../../assets/company/5.enouvologo.png';
-import Company6LogoRikkei from '../../assets/company/6.Logo-Rikkei.png';
-import Company7Tomosia from '../../assets/company/7.tomosia.png';
-import Company8Paracel from '../../assets/company/8.Paracel.png';
-import Company9MadisonTechnologies from '../../assets/company/9.madison-technologies.png';
-import Company10MOZIASOFT from '../../assets/company/10.MOZIASOFT.png';
-import Company11Techchain from '../../assets/company/11.techchain.png';
-import Company12Avoca from '../../assets/company/12.Avoca.png';
-import Company13EnableStartup from '../../assets/company/13.Enable-Startup.png';
-import Company14LOGOPSCd from '../../assets/company/14.PSCD.png';
-import Company15EMAI from '../../assets/company/15.EM&AI.png';
-import Company16Mrp from '../../assets/company/16.mrp.png';
-import Company17Heatmob from '../../assets/company/17.heatmob.png';
-import Company18EvvoLabs from '../../assets/company/18.EvvoLabs.png';
-import Company19Amit from '../../assets/company/19.AMIT.png';
-import Company20Spereax from '../../assets/company/20.spereax.png';
-import Company21Edtronaut from '../../assets/company/21.logoedtronaut.png';
-import Company22Aiaivn from '../../assets/company/22.AIAIVN.png';
-import Company23Antie from '../../assets/company/23.antie.png';
-import Company24Chatfly from '../../assets/company/24.chatfly.png';
+import Company1CMCGlobal from "../../assets/company/1.cmc-global.png";
+import Company2Mor from "../../assets/company/2.Mor.png";
+import Company3NapaGlobal from "../../assets/company/3.Napaglobal.png";
+import Company4LogoRIKAI from "../../assets/company/4.logoRIKAI.png";
+import Company5EnouvoLogo from "../../assets/company/5.enouvologo.png";
+import Company6LogoRikkei from "../../assets/company/6.Logo-Rikkei.png";
+import Company7Tomosia from "../../assets/company/7.tomosia.png";
+import Company8Paracel from "../../assets/company/8.Paracel.png";
+import Company9MadisonTechnologies from "../../assets/company/9.madison-technologies.png";
+import Company10MOZIASOFT from "../../assets/company/10.MOZIASOFT.png";
+import Company11Techchain from "../../assets/company/11.techchain.png";
+import Company12Avoca from "../../assets/company/12.Avoca.png";
+import Company13EnableStartup from "../../assets/company/13.Enable-Startup.png";
+import Company14LOGOPSCd from "../../assets/company/14.PSCD.png";
+import Company15EMAI from "../../assets/company/15.EM&AI.png";
+import Company16Mrp from "../../assets/company/16.mrp.png";
+import Company17Heatmob from "../../assets/company/17.heatmob.png";
+import Company18EvvoLabs from "../../assets/company/18.EvvoLabs.png";
+import Company19Amit from "../../assets/company/19.AMIT.png";
+import Company20Spereax from "../../assets/company/20.spereax.png";
+import Company21Edtronaut from "../../assets/company/21.logoedtronaut.png";
+import Company22Aiaivn from "../../assets/company/22.AIAIVN.png";
+import Company23Antie from "../../assets/company/23.antie.png";
+import Company24Chatfly from "../../assets/company/24.chatfly.png";
 
 const organizations = [
   {
-    name: 'DevPlus',
+    name: "DevPlus",
     image: DevPlusLogo,
   },
   {
-    name: 'SKHCN',
+    name: "SKHCN",
     image: SKHCNLogo,
   },
 ];
 
 const companion = [
   {
-    name: 'GDG',
+    name: "GDG",
     image: GDGLogo,
   },
   {
-    name: 'AILeader',
+    name: "AILeader",
     image: AILeaderLogo,
   },
 ];
 
 const partners = [
-  { name: 'CMC Global', image: Company1CMCGlobal },
-  { name: 'Mor', image: Company2Mor },
-  { name: 'Napa Global', image: Company3NapaGlobal },
-  { name: 'Logo RIKAI', image: Company4LogoRIKAI },
-  { name: 'Enouvo', image: Company5EnouvoLogo },
-  { name: 'Logo Rikkei', image: Company6LogoRikkei },
-  { name: 'Tomosia', image: Company7Tomosia },
-  { name: 'Paracel', image: Company8Paracel },
-  { name: 'Madison Technologies', image: Company9MadisonTechnologies },
-  { name: 'MOZIASOFT', image: Company10MOZIASOFT },
-  { name: 'Techchain', image: Company11Techchain },
-  { name: 'Avoca', image: Company12Avoca },
-  { name: 'Enable Startup', image: Company13EnableStartup },
-  { name: 'PSCD', image: Company14LOGOPSCd },
-  { name: 'EM&AI', image: Company15EMAI },
-  { name: 'Mrp', image: Company16Mrp },
-  { name: 'Heatmob', image: Company17Heatmob },
-  { name: 'Evvo Labs', image: Company18EvvoLabs },
-  { name: 'AMIT', image: Company19Amit },
-  { name: 'Spereax', image: Company20Spereax },
-  { name: 'Edtronaut', image: Company21Edtronaut },
-  { name: 'AIAIVN', image: Company22Aiaivn },
-  { name: 'Antie', image: Company23Antie },
-  { name: 'Chatfly', image: Company24Chatfly },
+  { name: "CMC Global", image: Company1CMCGlobal },
+  { name: "Mor", image: Company2Mor },
+  { name: "Napa Global", image: Company3NapaGlobal },
+  { name: "Logo RIKAI", image: Company4LogoRIKAI },
+  { name: "Enouvo", image: Company5EnouvoLogo },
+  { name: "Logo Rikkei", image: Company6LogoRikkei },
+  { name: "Tomosia", image: Company7Tomosia },
+  { name: "Paracel", image: Company8Paracel },
+  { name: "Madison Technologies", image: Company9MadisonTechnologies },
+  { name: "MOZIASOFT", image: Company10MOZIASOFT },
+  { name: "Techchain", image: Company11Techchain },
+  { name: "Avoca", image: Company12Avoca },
+  { name: "Enable Startup", image: Company13EnableStartup },
+  { name: "PSCD", image: Company14LOGOPSCd },
+  { name: "EM&AI", image: Company15EMAI },
+  { name: "Mrp", image: Company16Mrp },
+  { name: "Heatmob", image: Company17Heatmob },
+  { name: "Evvo Labs", image: Company18EvvoLabs },
+  { name: "AMIT", image: Company19Amit },
+  { name: "Spereax", image: Company20Spereax },
+  { name: "Edtronaut", image: Company21Edtronaut },
+  { name: "AIAIVN", image: Company22Aiaivn },
+  { name: "Antie", image: Company23Antie },
+  { name: "Chatfly", image: Company24Chatfly },
 ];
 
 const Network = () => {
