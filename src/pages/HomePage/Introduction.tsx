@@ -35,7 +35,7 @@ const Introduction = () => {
               src={GDGIC}
               alt="SKHCN"
               preview={false}
-              className="md:!w-[150px] !w-[100px]"
+              className="md:!w-[300px] !w-[100px]"
             />
             <Image
               src={AILeaderIC}
